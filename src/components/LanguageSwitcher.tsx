@@ -1,15 +1,31 @@
+"use client";
+
 import { Locale, locales } from "@/lib/i18n";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
+  const pathname = usePathname();
+
   const labels: Record<Locale, string> = { az: "AZ", en: "EN", ru: "RU" };
+
+  function switchHref(locale: Locale): string {
+    const parts = pathname.split("/");
+    if (parts.length > 1 && (parts[1] === "az" || parts[1] === "en" || parts[1] === "ru")) {
+      parts[1] = locale;
+    } else {
+      parts.splice(1, 0, locale);
+    }
+    return parts.join("/") || "/";
+  }
 
   return (
     <div className="flex items-center gap-1">
       {locales.map((locale) => (
         <Link
           key={locale}
-          href={`/${locale}`}
+          href={switchHref(locale)}
+          scroll={false}
           className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-colors ${
             locale === currentLang
               ? "bg-primary text-white"
