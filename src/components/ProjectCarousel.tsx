@@ -24,21 +24,25 @@ interface ProjectCarouselProps {
   dict: any;
 }
 
-function chunk<T>(arr: T[], size: number): T[][] {
+function slidingWindows<T>(arr: T[], size: number): T[][] {
   const result: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) {
-    result.push(arr.slice(i, i + size));
+  for (let i = 0; i < arr.length; i++) {
+    const window: T[] = [];
+    for (let j = 0; j < size; j++) {
+      window.push(arr[(i + j) % arr.length]);
+    }
+    result.push(window);
   }
   return result;
 }
 
 export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) {
-  const pages = chunk(projects, 3);
+  const windows = slidingWindows(projects, 3);
   const [page, setPage] = useState(0);
 
   const next = useCallback(() => {
-    setPage((prev) => (prev + 1) % pages.length);
-  }, [pages.length]);
+    setPage((prev) => (prev + 1) % windows.length);
+  }, [windows.length]);
 
   useEffect(() => {
     const timer = setInterval(next, 5000);
@@ -54,11 +58,11 @@ export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) 
           className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${page * 100}%)` }}
         >
-          {pages.map((group, i) => (
-            <div key={i} className="grid min-w-full gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {windows.map((group, i) => (
+            <div key={i} className="grid min-w-full shrink-0 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {group.map((project) => (
                 <ProjectCard
-                  key={project.id}
+                  key={`${i}-${project.id}`}
                   title={project.title}
                   description={String(project[descriptionKey])}
                   tags={project.tags}
@@ -75,9 +79,9 @@ export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) 
         </div>
       </div>
 
-      {pages.length > 1 && (
+      {windows.length > 1 && (
         <div className="mt-6 flex justify-center gap-2">
-          {pages.map((_, i) => (
+          {windows.map((_, i) => (
             <button
               key={i}
               onClick={() => setPage(i)}
