@@ -67,11 +67,12 @@ export default function WorkPage({
                 title={project.title}
                 description={String(project[descriptionKey])}
                 tags={project.tags}
-                image={project.image}
+                images={project.images}
                 url={project.url}
                 github={project.github}
                 liveDemo={dict.work.live_demo}
                 sourceCode={dict.work.source_code}
+                aspectRatio={project.aspectRatio}
               />
             ))}
           </div>

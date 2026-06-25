@@ -1,15 +1,15 @@
 {
   "name": "Turan Hidayetov",
   "title": "Full-Stack Web Developer",
-  "email": "turan@turanly.com",
-  "location": "Baku, Azerbaijan",
+  "phone": "+99451-948-9523",
+  "email": "turanhidayatov@gmail.com",
+  "location": "Nasimi r. İmran Qasımov, Baku, Azerbaijan",
   "timezone": "Asia/Baku",
   "avatar": "/images/avatar.jpg",
   "social": {
     "github": "https://github.com/TuranHidayet",
-    "linkedin": "https://linkedin.com/in/turanhidayet",
-    "twitter": "https://twitter.com/turanhidayet",
-    "email": "mailto:turan@turanly.com"
+    "linkedin": "https://linkedin.com/in/turanhidayatov-a91808293",
+    "email": "mailto:turanhidayatov@gmail.com"
   },
   "available": true
 }

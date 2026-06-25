@@ -10,14 +10,15 @@
     "greeting": "Hi, I'm",
     "title": "Turan Hidayetov",
     "subtitle": "Full-Stack Web Developer",
-    "description": "A developer who builds modern and scalable web applications with a focus on user experience.",
+    "description": "A full-stack developer specialized in PHP, Laravel, and MySQL with expertise in RESTful APIs, MVC architecture, and backend development.",
     "cta_work": "View My Work",
     "cta_contact": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "bio": "I'm Turan Hidayetov, a full-stack web developer. I have experience in frontend and backend technologies. I strive to build user-centric, performant, and beautiful web applications.",
+    "bio": "I'm Turan Hidayetov, a full-stack web developer with expertise in PHP and Laravel backend development, RESTful APIs, MySQL/PostgreSQL, and MVC architecture. I have worked on diverse projects including courier, logistics, warehouse management, and government portal platforms.",
     "experience": "Experience",
+    "education": "Education",
     "skills": "Skills",
     "download_cv": "Download CV"
   },

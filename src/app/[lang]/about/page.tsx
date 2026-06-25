@@ -29,6 +29,9 @@ export default async function AboutPage({
   const roleKey = `role_${lang}` as keyof (typeof experience)[0];
   const descKey = `description_${lang}` as keyof (typeof experience)[0];
 
+  const workExperience = experience.filter((e) => e.type === "fulltime" || e.type === "freelance");
+  const education = experience.filter((e) => e.type === "education");
+
   return (
     <div className="pt-24">
       <section className="section-padding">
@@ -41,7 +44,21 @@ export default async function AboutPage({
 
             <h2 className="mb-6 text-2xl font-bold">{dict.about.experience}</h2>
             <div className="mb-16">
-              {experience.map((exp) => (
+              {workExperience.map((exp) => (
+                <TimelineItem
+                  key={exp.id}
+                  role={String(exp[roleKey])}
+                  company={exp.company}
+                  period={`${exp.startDate} - ${exp.endDate || "Present"}`}
+                  description={String(exp[descKey])}
+                  location={exp.location}
+                />
+              ))}
+            </div>
+
+            <h2 className="mb-6 text-2xl font-bold">{dict.about.education}</h2>
+            <div className="mb-16">
+              {education.map((exp) => (
                 <TimelineItem
                   key={exp.id}
                   role={String(exp[roleKey])}

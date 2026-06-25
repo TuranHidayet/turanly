@@ -1,67 +1,121 @@
 [
   {
     "id": 1,
-    "title": "E-Commerce Platform",
-    "description_az": "Tam funksional e-ticarət platforması",
-    "description_en": "Full-featured e-commerce platform",
-    "description_ru": "Полнофункциональная платформа электронной коммерции",
-    "image": "/images/project1.jpg",
-    "tags": ["React", "Next.js", "PostgreSQL", "Tailwind"],
+    "title": "Mopsn MMC — Multi-Optional Platform",
+    "description_az": "Multi-optional platform: courier, taksi, restoran, ərzaq və aptek idarəetmə sistemləri. PHP və Laravel ilə RESTful API, admin panel və mobil tətbiq dəstəyi.",
+    "description_en": "Multi-optional platform: courier, taxi, restaurant, grocery, and pharmacy management systems. RESTful APIs with PHP and Laravel, admin panel and mobile app support.",
+    "description_ru": "Мультиопциональная платформа: курьер, такси, ресторан, продукты и аптека. RESTful API на PHP и Laravel, поддержка админ-панели и мобильных приложений.",
+    "images": [
+      "/images/projects/mopsn-1.jpg",
+      "/images/projects/mopsn-2.jpg"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "REST API"],
     "category": "fullstack",
-    "url": "https://example.com",
-    "github": "https://github.com/turanly/project1",
-    "featured": true
+    "url": "",
+    "github": "",
+    "featured": true,
+    "aspectRatio": "16 / 9"
   },
   {
     "id": 2,
-    "title": "Task Manager App",
-    "description_az": "Modern task idarəetmə tətbiqi",
-    "description_en": "Modern task management application",
-    "description_ru": "Современное приложение для управления задачами",
-    "image": "/images/project2.jpg",
-    "tags": ["React", "TypeScript", "Node.js", "MongoDB"],
+    "title": "EMS — Cargo & Logistics System",
+    "description_az": "EMS əsaslı kargöndərmə və logistika idarəetmə sistemi. Shipment processing, order lifecycle, payment handling, status workflows.",
+    "description_en": "EMS-based cargo and logistics management system. Shipment processing, order lifecycle, payment handling, and status workflows.",
+    "description_ru": "Система управления грузоперевозками и логистикой на базе EMS. Обработка отправлений, жизненный цикл заказов, обработка платежей.",
+    "images": [
+      "/images/projects/ems-1.jpg",
+      "/images/projects/ems-2.jpg"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "REST API", "RBAC"],
     "category": "fullstack",
-    "url": "https://example.com",
-    "github": "https://github.com/turanly/project2",
-    "featured": true
+    "url": "",
+    "github": "",
+    "featured": true,
+    "aspectRatio": "16 / 9"
   },
   {
     "id": 3,
-    "title": "Portfolio Website",
-    "description_az": "Şəxsi portfolio saytı",
-    "description_en": "Personal portfolio website",
-    "description_ru": "Личный сайт-портфолио",
-    "image": "/images/project3.jpg",
-    "tags": ["Next.js", "Tailwind", "Framer Motion"],
-    "category": "frontend",
-    "url": "https://turanly.com",
-    "github": "https://github.com/turanly/turanly",
-    "featured": true
+    "title": "GLB Soft — Warehouse Management",
+    "description_az": "Modul və genişlənə bilən anbar idarəetmə sistemi. Product management, stock control, inventory movements, multi-tenant data handling.",
+    "description_en": "Scalable warehouse management system with modular architecture. Product management, stock control, inventory movements, multi-tenant data handling.",
+    "description_ru": "Масштабируемая система управления складом с модульной архитектурой. Управление продуктами, контроль запасов, мультитенантная обработка данных.",
+    "images": [
+      "/images/projects/glbsoft-1.jpg",
+      "/images/projects/glbsoft-2.jpg"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "RBAC", "API"],
+    "category": "fullstack",
+    "url": "",
+    "github": "",
+    "featured": true,
+    "aspectRatio": "16 / 9"
   },
   {
     "id": 4,
-    "title": "Weather Dashboard",
-    "description_az": "Real-time hava məlumatları paneli",
-    "description_en": "Real-time weather dashboard",
-    "description_ru": "Панель погоды в реальном времени",
-    "image": "/images/project4.jpg",
-    "tags": ["React", "API", "Chart.js", "CSS"],
-    "category": "frontend",
-    "url": "https://example.com",
-    "github": "https://github.com/turanly/project4",
-    "featured": false
+    "title": "MDTF — Government Web Platform",
+    "description_az": "Mənəvi Dəyərlərin Təbliği Fondu üçün dövlət web platforması. MVC architecture, content management, authentication, role-based access control.",
+    "description_en": "Government web platform for the Fund for the Promotion of Moral Values. MVC architecture, content management, authentication, role-based access control.",
+    "description_ru": "Государственная веб-платформа для Фонда пропаганды моральных ценностей. MVC архитектура, управление контентом, аутентификация, RBAC.",
+    "images": [
+      "/images/projects/mdtf-1.jpg",
+      "/images/projects/mdtf-2.jpg"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "MVC", "RBAC"],
+    "category": "fullstack",
+    "url": "",
+    "github": "",
+    "featured": false,
+    "aspectRatio": "16 / 9"
   },
   {
     "id": 5,
-    "title": "Chat Application",
-    "description_az": "Real-time chat tətbiqi",
-    "description_en": "Real-time chat application",
-    "description_ru": "Приложение чата в реальном времени",
-    "image": "/images/project5.jpg",
-    "tags": ["React", "Socket.io", "Node.js", "Redis"],
+    "title": "Azstudy — Education Platform",
+    "description_az": "Beynəlxalq təhsil platforması. Laravel MVC, RESTful API, authentication, role-based access control, dynamic CRUD systems.",
+    "description_en": "International education platform. Laravel MVC, RESTful API, authentication, role-based access control, dynamic CRUD systems.",
+    "description_ru": "Международная образовательная платформа. Laravel MVC, RESTful API, аутентификация, RBAC, динамические CRUD системы.",
+    "images": [
+      "/images/projects/azstudy-1.jpg",
+      "/images/projects/azstudy-2.jpg"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "REST API", "CRUD"],
     "category": "fullstack",
-    "url": "https://example.com",
-    "github": "https://github.com/turanly/project5",
-    "featured": false
+    "url": "",
+    "github": "",
+    "featured": false,
+    "aspectRatio": "16 / 9"
+  },
+  {
+    "id": 6,
+    "title": "Agro Express — Farm Products Platform",
+    "description_az": "Kənd təsərrüfatı məhsullarının sifarişi və çatdırılması üçün web platforma. Order tracking, delivery scheduling, mapping integration.",
+    "description_en": "Web platform for ordering and tracking farm products. Order tracking, delivery scheduling, real-time mapping and notification services.",
+    "description_ru": "Веб-платформа для заказа и отслеживания сельскохозяйственной продукции. Отслеживание заказов, планирование доставки, интеграция карт.",
+    "images": [
+      "/images/projects/agro-1.jpg",
+      "/images/projects/agro-2.jpg"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "API", "MVC"],
+    "category": "fullstack",
+    "url": "",
+    "github": "",
+    "featured": false,
+    "aspectRatio": "16 / 9"
+  },
+  {
+    "id": 7,
+    "title": "EDM — Electronic Data Management",
+    "description_az": "Azerishiq OJSC üçün elektron data idarəetmə sistemi. EV charging stansiyaları üçün web platforma, API və third-party integration.",
+    "description_en": "Electronic Data Management System for Azerishiq OJSC. Web platform for EV charging stations, API development, third-party integrations.",
+    "description_ru": "Система электронного управления данными для Azerishiq OJSC. Веб-платформа для зарядных станций, разработка API, интеграция со сторонними сервисами.",
+    "images": [
+      "/images/projects/edm-1.jpg",
+      "/images/projects/edm-2.jpg"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "API", "Frontend"],
+    "category": "fullstack",
+    "url": "",
+    "github": "",
+    "featured": false,
+    "aspectRatio": "16 / 9"
   }
 ]
