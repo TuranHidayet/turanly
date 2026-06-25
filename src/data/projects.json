@@ -71,15 +71,17 @@
   },
   {
     "id": 5,
-    "title": "Azstudy — Education Platform",
-    "description_az": "Beynəlxalq təhsil platforması. Laravel MVC, RESTful API, authentication, role-based access control, dynamic CRUD systems.",
-    "description_en": "International education platform. Laravel MVC, RESTful API, authentication, role-based access control, dynamic CRUD systems.",
-    "description_ru": "Международная образовательная платформа. Laravel MVC, RESTful API, аутентификация, RBAC, динамические CRUD системы.",
+    "title": "BSC — Baku Services Company",
+    "description_az": "Bionet MMC üçün korporativ web sistemlərə və daxili platformalara texniki dəstək və texniki qulluq. Backend və database problemlərinin həlli, məlumat ardıcıllığı, sistem konfiqurasiyası.",
+    "description_en": "Technical support and maintenance for corporate web systems and internal platforms at Bionet MMC. Backend and database issue resolution, data consistency, system configuration.",
+    "description_ru": "Техническая поддержка и обслуживание корпоративных веб-систем и внутренних платформ в Bionet MMC. Решение проблем бэкенда и баз данных, согласованность данных, настройка системы.",
     "images": [
-      "/images/projects/azstudy-1.jpg",
-      "/images/projects/azstudy-2.jpg"
+      "/images/projects/bsc.png",
+      "/images/projects/bsc2.png",
+      "/images/projects/bsc3.png",
+      "/images/projects/bsc4.png"
     ],
-    "tags": ["PHP", "Laravel", "MySQL", "REST API", "CRUD"],
+    "tags": ["PHP", "Laravel", "MySQL", "Database", "Maintenance"],
     "category": "fullstack",
     "url": "",
     "github": "",
