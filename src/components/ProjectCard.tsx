@@ -21,29 +21,19 @@ export function ProjectCard({ title, description, tags, images, url, github, liv
         <h3 className="mb-2 text-lg font-semibold">{title}</h3>
         <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">{description}</p>
 
-        <div className="mb-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-lg bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        <div className="flex gap-3">
-          {url && liveDemo && (
-            <a href={url} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">
-              {liveDemo}
-            </a>
-          )}
-          {github && sourceCode && (
-            <a href={github} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-500 hover:underline dark:text-zinc-400">
-              {sourceCode}
-            </a>
-          )}
-        </div>
+        {url && (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mb-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+          >
+            {liveDemo}
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        )}
       </div>
     </div>
   );

@@ -12,7 +12,7 @@
     ],
     "tags": ["PHP", "Laravel", "MySQL", "REST API"],
     "category": "fullstack",
-    "url": "",
+    "url": "https://mopsn.com/",
     "github": "",
     "featured": true,
     "aspectRatio": "16 / 9"
@@ -46,7 +46,7 @@
     ],
     "tags": ["PHP", "Laravel", "MySQL", "Bug Fixing", "Maintenance"],
     "category": "fullstack",
-    "url": "",
+    "url": "https://orhundoor.com/en/about-us",
     "github": "",
     "featured": false,
     "aspectRatio": "16 / 9"
@@ -64,7 +64,7 @@
     ],
     "tags": ["PHP", "Laravel", "MySQL", "MVC", "RBAC"],
     "category": "fullstack",
-    "url": "",
+    "url": "https://mdtf.bionet.az/az/qalereya",
     "github": "",
     "featured": true,
     "aspectRatio": "16 / 9"
