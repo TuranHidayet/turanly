@@ -24,6 +24,10 @@
     "description_en": "EMS-based cargo and logistics management system. Shipment processing, order lifecycle, payment handling, and status workflows.",
     "description_ru": "Система управления грузоперевозками и логистикой на базе EMS. Обработка отправлений, жизненный цикл заказов, обработка платежей.",
     "images": [
+      "/images/projects/ems2.png",
+      "/images/projects/ems3.png",
+      "/images/projects/ems4.png",
+      "/images/projects/ems5.png",
       "/images/projects/ems.png"
     ],
     "tags": ["PHP", "Laravel", "MySQL", "REST API", "RBAC"],
