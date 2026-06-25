@@ -93,8 +93,10 @@
     "description_en": "Web platform for ordering and tracking farm products. Order tracking, delivery scheduling, real-time mapping and notification services.",
     "description_ru": "Веб-платформа для заказа и отслеживания сельскохозяйственной продукции. Отслеживание заказов, планирование доставки, интеграция карт.",
     "images": [
-      "/images/projects/agro-1.jpg",
-      "/images/projects/agro-2.jpg"
+      "/images/projects/agro-express.png",
+      "/images/projects/agro-express2.png",
+      "/images/projects/agro-express3.png",
+      "/images/projects/agro-express4.png"
     ],
     "tags": ["PHP", "Laravel", "MySQL", "API", "MVC"],
     "category": "fullstack",
