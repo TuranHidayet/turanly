@@ -34,6 +34,24 @@
     "aspectRatio": "16 / 9"
   },
   {
+    "id": 3,
+    "title": "Orhun Door — Web Platform Support",
+    "description_az": "Bionet MMC üçün Orhun Door web platformasına dəstək və texniki qulluq. Content idarəetmə, sistem yeniləmələri, bug fix və backend dəstəyi.",
+    "description_en": "Orhun Door Web Platform Support and maintenance for Bionet MMC. Content management, system updates, bug fixes, and backend support.",
+    "description_ru": "Поддержка и обслуживание веб-платформы Orhun Door для Bionet MMC. Управление контентом, обновления системы, исправление ошибок и поддержка бэкенда.",
+    "images": [
+      "/images/projects/orhundoor.png",
+      "/images/projects/orhundoor2.png",
+      "/images/projects/orhundoor3.png"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "Bug Fixing", "Maintenance"],
+    "category": "fullstack",
+    "url": "",
+    "github": "",
+    "featured": false,
+    "aspectRatio": "16 / 9"
+  },
+  {
     "id": 4,
     "title": "MDTF — Government Web Platform",
     "description_az": "Mənəvi Dəyərlərin Təbliği Fondu üçün dövlət web platforması. MVC architecture, content management, authentication, role-based access control.",
