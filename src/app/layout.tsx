@@ -11,6 +11,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Turan Hidayetov | Full-Stack Web Developer",
   description: "Full-Stack Web Developer - Modern web applications",
+  icons: {
+    icon: "/images/turanly-icon.svg",
+    shortcut: "/images/turanly-favicon.svg",
+  },
 };
 
 export default function RootLayout({

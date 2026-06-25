@@ -23,11 +23,19 @@ export function Navbar({ dict, lang }: NavbarProps) {
       <nav className="container-main flex h-16 items-center justify-between">
         <Link href={`/${lang}`}>
           <Image
-            src="/images/turanly_logo_v3.svg"
+            src="/images/turanly-logo-light.svg"
             alt="Turanly"
             width={100}
             height={28}
-            className="h-7 w-auto"
+            className="h-7 w-auto dark:hidden"
+            priority
+          />
+          <Image
+            src="/images/turanly-logo-dark.svg"
+            alt="Turanly"
+            width={100}
+            height={28}
+            className="h-7 w-auto hidden dark:block"
             priority
           />
         </Link>
