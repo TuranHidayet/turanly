@@ -37,7 +37,7 @@ function slidingWindows<T>(arr: T[], size: number): T[][] {
 }
 
 export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) {
-  const windows = slidingWindows(projects, 3);
+  const windows = slidingWindows(projects, 1);
   const [page, setPage] = useState(0);
 
   const next = useCallback(() => {
@@ -59,7 +59,7 @@ export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) 
           style={{ transform: `translateX(-${page * 100}%)` }}
         >
           {windows.map((group, i) => (
-            <div key={i} className="grid min-w-full shrink-0 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div key={i} className="mx-auto max-w-md min-w-full shrink-0">
               {group.map((project) => (
                 <ProjectCard
                   key={`${i}-${project.id}`}
