@@ -6,8 +6,9 @@
     "description_en": "Multi-optional platform: courier, taxi, restaurant, grocery, and pharmacy management systems. RESTful APIs with PHP and Laravel, admin panel and mobile app support.",
     "description_ru": "Мультиопциональная платформа: курьер, такси, ресторан, продукты и аптека. RESTful API на PHP и Laravel, поддержка админ-панели и мобильных приложений.",
     "images": [
-      "/images/projects/mopsn-1.jpg",
-      "/images/projects/mopsn-2.jpg"
+      "/images/projects/mopsn.png",
+      "/images/projects/mopsn2.png",
+      "/images/projects/mopsn3.png"
     ],
     "tags": ["PHP", "Laravel", "MySQL", "REST API"],
     "category": "fullstack",
@@ -23,27 +24,9 @@
     "description_en": "EMS-based cargo and logistics management system. Shipment processing, order lifecycle, payment handling, and status workflows.",
     "description_ru": "Система управления грузоперевозками и логистикой на базе EMS. Обработка отправлений, жизненный цикл заказов, обработка платежей.",
     "images": [
-      "/images/projects/ems-1.jpg",
-      "/images/projects/ems-2.jpg"
+      "/images/projects/ems.png"
     ],
     "tags": ["PHP", "Laravel", "MySQL", "REST API", "RBAC"],
-    "category": "fullstack",
-    "url": "",
-    "github": "",
-    "featured": true,
-    "aspectRatio": "16 / 9"
-  },
-  {
-    "id": 3,
-    "title": "GLB Soft — Warehouse Management",
-    "description_az": "Modul və genişlənə bilən anbar idarəetmə sistemi. Product management, stock control, inventory movements, multi-tenant data handling.",
-    "description_en": "Scalable warehouse management system with modular architecture. Product management, stock control, inventory movements, multi-tenant data handling.",
-    "description_ru": "Масштабируемая система управления складом с модульной архитектурой. Управление продуктами, контроль запасов, мультитенантная обработка данных.",
-    "images": [
-      "/images/projects/glbsoft-1.jpg",
-      "/images/projects/glbsoft-2.jpg"
-    ],
-    "tags": ["PHP", "Laravel", "MySQL", "RBAC", "API"],
     "category": "fullstack",
     "url": "",
     "github": "",
@@ -64,7 +47,7 @@
     "category": "fullstack",
     "url": "",
     "github": "",
-    "featured": false,
+    "featured": true,
     "aspectRatio": "16 / 9"
   },
   {
