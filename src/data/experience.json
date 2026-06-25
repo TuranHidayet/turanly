@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "role_az": "Full-Stack Web Developer",
+    "role_en": "Full-Stack Web Developer",
+    "role_ru": "Full-Stack Web Developer",
+    "company": "Freelance",
+    "startDate": "2023-01",
+    "endDate": null,
+    "description_az": "Müxtəlif müştərilər üçün web tətbiqləri hazırlayıram",
+    "description_en": "Building web applications for various clients",
+    "description_ru": "Разрабатываю веб-приложения для различных клиентов",
+    "location": "Baku",
+    "type": "freelance"
+  },
+  {
+    "id": 2,
+    "role_az": "Frontend Developer",
+    "role_en": "Frontend Developer",
+    "role_ru": "Frontend Developer",
+    "company": "Tech Company",
+    "startDate": "2022-06",
+    "endDate": "2023-01",
+    "description_az": "Frontend tətbiqləri üzərində işlədim",
+    "description_en": "Worked on frontend applications",
+    "description_ru": "Работал над frontend приложениями",
+    "location": "Baku",
+    "type": "fulltime"
+  },
+  {
+    "id": 3,
+    "role_az": "Junior Web Developer",
+    "role_en": "Junior Web Developer",
+    "role_ru": "Junior Web Developer",
+    "company": "Startup XYZ",
+    "startDate": "2021-09",
+    "endDate": "2022-06",
+    "description_az": "Web saytların hazırlanması və dəstəklənməsi",
+    "description_en": "Website development and maintenance",
+    "description_ru": "Разработка и поддержка веб-сайтов",
+    "location": "Baku",
+    "type": "fulltime"
+  }
+]

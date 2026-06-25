@@ -1,0 +1,14 @@
+[
+  { "name": "JavaScript", "level": "expert", "icon": "javascript" },
+  { "name": "TypeScript", "level": "expert", "icon": "typescript" },
+  { "name": "React", "level": "expert", "icon": "react" },
+  { "name": "Next.js", "level": "expert", "icon": "nextjs" },
+  { "name": "Node.js", "level": "advanced", "icon": "nodejs" },
+  { "name": "PostgreSQL", "level": "advanced", "icon": "postgresql" },
+  { "name": "MongoDB", "level": "advanced", "icon": "mongodb" },
+  { "name": "Tailwind CSS", "level": "expert", "icon": "tailwind" },
+  { "name": "Git", "level": "advanced", "icon": "git" },
+  { "name": "Docker", "level": "intermediate", "icon": "docker" },
+  { "name": "Redis", "level": "intermediate", "icon": "redis" },
+  { "name": "GraphQL", "level": "intermediate", "icon": "graphql" }
+]

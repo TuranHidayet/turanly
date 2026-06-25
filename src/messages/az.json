@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Ana Səhifə",
+    "about": "Haqqımda",
+    "work": "İşlərim",
+    "blog": "Bloq",
+    "contact": "Əlaqə"
+  },
+  "hero": {
+    "greeting": "Salam, mən",
+    "title": "Turan Hidayetov",
+    "subtitle": "Full-Stack Web Developer",
+    "description": "Modern və scalable web tətbiqləri quran, istifadəçi təcrübəsinə önəm verən bir developer.",
+    "cta_work": "İşlərimə Bax",
+    "cta_contact": "Əlaqə"
+  },
+  "about": {
+    "title": "Haqqımda",
+    "bio": "Mən Turan Hidayetov, full-stack web developer. Frontend və backend texnologiyalarında təcrübəm var. İstifadəçi mərkəzli, performanslı və gözəl görünən web tətbiqləri qurmağa çalışıram.",
+    "experience": "Təcrübə",
+    "skills": "Bacarıqlar",
+    "download_cv": "CV Yüklə"
+  },
+  "work": {
+    "title": "İşlərim",
+    "subtitle": "Son layihələrim",
+    "all": "Hamısı",
+    "frontend": "Frontend",
+    "fullstack": "Full-Stack",
+    "uiux": "UI/UX",
+    "live_demo": "Canlı Bax",
+    "source_code": "Mənbə Kodu"
+  },
+  "blog": {
+    "title": "Bloq",
+    "subtitle": "Düşüncələrim və yazılarım",
+    "read_more": "Davamını Oxu",
+    "no_posts": "Hələ heç bir yazı yoxdur.",
+    "back": "Geri",
+    "posts": {
+      "getting-started-nextjs": {
+        "title": "Next.js ilə Tanışlıq",
+        "description": "Next.js ilə müasir web tətbiqləri necə qurmağı öyrənin",
+        "date": "15 İyun, 2026",
+        "body_title": "Next.js ilə Tanışlıq",
+        "paragraph1": "Next.js sürətli, SEO-friendly web tətbiqləri qurmağa imkan verən bir React framework-üdür. Bu yazıda Next.js-in əsaslarını və necə başlamağı öyrənəcəyik.",
+        "why_title": "Niyə Next.js?",
+        "why_desc": "Next.js bir çox xüsusiyyəti out-of-the-box təqdim edir, bunlara daxildir:",
+        "features": [
+          "Server-side rendering və statik generasiya",
+          "Fayl əsaslı routing",
+          "API routes",
+          "Built-in CSS və şəkil optimizasiyası",
+          "TypeScript dəstəyi"
+        ],
+        "start_title": "Başlamaq",
+        "start_desc": "Yeni Next.js layihəsi yaratmaq üçün aşağıdakı əmri işə salın:",
+        "code": "npx create-next-app@latest my-app",
+        "conclusion_title": "Nəticə",
+        "conclusion_desc": "Next.js müasir web tətbiqləri qurmaq üçün əla seçimdir. Güclü xüsusiyyətləri və əla developer təcrübəsi ilə bu gün ən populyar framework-lərdən biridir."
+      }
+    }
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "subtitle": "Mənimlə əlaqə saxlayın",
+    "name": "Adınız",
+    "email": "Email",
+    "message": "Mesajınız",
+    "send": "Göndər",
+    "success": "Mesajınız göndərildi!",
+    "error": "Xəta baş verdi. Yenidən cəhd edin.",
+    "or": "və ya"
+  },
+  "footer": {
+    "copyright": "Bütün hüquqlar qorunur."
+  },
+  "theme": {
+    "light": "İşıqlı",
+    "dark": "Qaranlıq"
+  }
+}
