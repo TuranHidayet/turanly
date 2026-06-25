@@ -17,9 +17,9 @@ export function ProjectCard({ title, description, tags, images, url, github, liv
     <div className="card group overflow-hidden">
       <ImageSlider images={images} alt={title} aspectRatio={aspectRatio} />
 
-      <div className="mt-4">
+      <div className="mt-4 min-h-[130px]">
         <h3 className="mb-2 text-lg font-semibold">{title}</h3>
-        <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">{description}</p>
+        <p className="mb-4 text-sm leading-relaxed text-zinc-600 line-clamp-4 dark:text-zinc-400">{description}</p>
 
         {url && (
           <a

@@ -22,7 +22,7 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
 
   useEffect(() => {
     if (images.length <= 1 || isHovered) return;
-    const timer = setInterval(next, 4000);
+    const timer = setInterval(next, 2000);
     return () => clearInterval(timer);
   }, [images.length, isHovered, next]);
 
