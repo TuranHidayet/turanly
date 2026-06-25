@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
 interface ImageSliderProps {
@@ -30,7 +29,7 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
   if (images.length === 0) {
     return (
       <div
-        className="flex items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800"
+        className="flex w-full items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800"
         style={{ aspectRatio }}
       >
         <svg className="h-12 w-12 text-zinc-300 dark:text-zinc-600" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
@@ -42,7 +41,7 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
 
   return (
     <div
-      className="group relative overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800"
+      className="group relative w-full overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800"
       style={{ aspectRatio }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -53,13 +52,11 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
           className="absolute inset-0 transition-opacity duration-700"
           style={{ opacity: i === current ? 1 : 0 }}
         >
-          <Image
+          <img
             src={src}
             alt={`${alt} - ${i + 1}`}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            priority={i === 0}
+            className="h-full w-full object-cover"
+            loading={i === 0 ? "eager" : "lazy"}
           />
         </div>
       ))}
