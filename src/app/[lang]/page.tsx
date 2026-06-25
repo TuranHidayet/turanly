@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { Hero } from "@/components/Hero";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { BlogCard } from "@/components/BlogCard";
 import projects from "@/data/projects.json";
 
@@ -16,7 +16,6 @@ export default async function HomePage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const descriptionKey = `description_${lang}` as keyof typeof projects[0];
   const posts = dict.blog.posts;
   const firstPost = Object.entries(posts)[0];
 
@@ -31,22 +30,7 @@ export default async function HomePage({
             <p className="text-zinc-500 dark:text-zinc-400">{dict.work.title}</p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                description={String(project[descriptionKey])}
-                tags={project.tags}
-                images={project.images}
-                url={project.url}
-                github={project.github}
-                liveDemo={dict.work.live_demo}
-                sourceCode={dict.work.source_code}
-                aspectRatio={project.aspectRatio}
-              />
-            ))}
-          </div>
+          <ProjectCarousel projects={projects} lang={lang} dict={dict} />
 
           <div className="mt-10 text-center">
             <Link
