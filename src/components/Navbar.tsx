@@ -1,6 +1,7 @@
 import { type Locale, type Dictionary } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
+import Image from "next/image";
 import Link from "next/link";
 
 interface NavbarProps {
@@ -20,11 +21,15 @@ export function Navbar({ dict, lang }: NavbarProps) {
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-b border-zinc-200/50 bg-white/80 backdrop-blur-lg dark:border-zinc-800/50 dark:bg-zinc-950/80">
       <nav className="container-main flex h-16 items-center justify-between">
-        <Link
-          href={`/${lang}`}
-          className="text-lg font-bold tracking-tight transition-colors hover:text-primary"
-        >
-          Turanly
+        <Link href={`/${lang}`}>
+          <Image
+            src="/images/logo.svg"
+            alt="Turanly"
+            width={100}
+            height={28}
+            className="h-7 w-auto"
+            priority
+          />
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
