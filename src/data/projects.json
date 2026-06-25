@@ -123,5 +123,23 @@
     "github": "",
     "featured": false,
     "aspectRatio": "16 / 9"
+  },
+  {
+    "id": 8,
+    "title": "RAF Consulting — Accounting & Finance",
+    "description_az": "RAF Consulting Services üçün peşəkar mühasibat və maliyyə konsaltinq veb-saytı. Mühasibat xidmətləri, vergi məsləhətləri, maliyyə konsaltinqi, IFRS hesabatlığı, autsors CFO və bank hesabatlığı.",
+    "description_en": "Professional accounting and finance consulting website for RAF Consulting Services. Accounting services, tax advisory, financial consulting, IFRS reporting, outsourced CFO, and bank reporting.",
+    "description_ru": "Профессиональный сайт бухгалтерских и финансовых консультационных услуг для RAF Consulting Services. Бухгалтерские услуги, налоговые консультации, финансовый консалтинг, отчетность по МСФО, аутсорсинговый CFO и банковская отчетность.",
+    "images": [
+      "/images/projects/rafconsulting.png",
+      "/images/projects/rafconsulting2.png",
+      "/images/projects/rafconsulting3.png"
+    ],
+    "tags": ["PHP", "Laravel", "MySQL", "Frontend"],
+    "category": "frontend",
+    "url": "",
+    "github": "",
+    "featured": false,
+    "aspectRatio": "16 / 9"
   }
 ]
