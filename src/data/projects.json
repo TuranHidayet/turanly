@@ -46,7 +46,7 @@
     ],
     "tags": ["PHP", "Laravel", "MySQL", "Bug Fixing", "Maintenance"],
     "category": "fullstack",
-    "url": "https://orhundoor.com/en/about-us",
+    "url": "https://orhundoor.com/",
     "github": "",
     "featured": false,
     "aspectRatio": "16 / 9"
@@ -64,7 +64,7 @@
     ],
     "tags": ["PHP", "Laravel", "MySQL", "MVC", "RBAC"],
     "category": "fullstack",
-    "url": "https://mdtf.bionet.az/az/qalereya",
+    "url": "https://mdtf.bionet.az/",
     "github": "",
     "featured": true,
     "aspectRatio": "16 / 9"
