@@ -21,7 +21,7 @@ export function Navbar({ dict, lang }: NavbarProps) {
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-b border-zinc-200/50 bg-white/80 backdrop-blur-lg dark:border-zinc-800/50 dark:bg-zinc-950/80">
       <nav className="container-main flex h-16 items-center justify-between">
-        <Link href={`/${lang}`}>
+        <Link href={`/${lang}`} className="rounded-lg border border-zinc-200 p-1 dark:border-zinc-700">
           <Image
             src="/images/turanly-logo-light.svg"
             alt="Turanly"

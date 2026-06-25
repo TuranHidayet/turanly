@@ -1,11 +1,11 @@
 "use client";
 
 import { Locale, locales } from "@/lib/i18n";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
   const pathname = usePathname();
+  const router = useRouter();
 
   const labels: Record<Locale, string> = { az: "AZ", en: "EN", ru: "RU" };
 
@@ -19,13 +19,17 @@ export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
     return parts.join("/") || "/";
   }
 
+  function handleClick(locale: Locale) {
+    sessionStorage.setItem("scrollY", String(window.scrollY));
+    router.push(switchHref(locale), { scroll: false });
+  }
+
   return (
     <div className="flex items-center gap-1">
       {locales.map((locale) => (
-        <Link
+        <button
           key={locale}
-          href={switchHref(locale)}
-          scroll={false}
+          onClick={() => handleClick(locale)}
           className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-colors ${
             locale === currentLang
               ? "bg-primary text-white"
@@ -33,7 +37,7 @@ export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
           }`}
         >
           {labels[locale]}
-        </Link>
+        </button>
       ))}
     </div>
   );
