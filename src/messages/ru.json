@@ -30,7 +30,8 @@
     "fullstack": "Full-Stack",
     "uiux": "UI/UX",
     "live_demo": "Демо",
-    "source_code": "Исходный код"
+    "source_code": "Исходный код",
+    "view_all": "Все проекты"
   },
   "blog": {
     "title": "Блог",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { Hero } from "@/components/Hero";
@@ -15,7 +16,6 @@ export default async function HomePage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const featuredProjects = projects.filter((p) => p.featured);
   const descriptionKey = `description_${lang}` as keyof typeof projects[0];
   const posts = dict.blog.posts;
   const firstPost = Object.entries(posts)[0];
@@ -32,7 +32,7 @@ export default async function HomePage({
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project) => (
+            {projects.map((project) => (
               <ProjectCard
                 key={project.id}
                 title={project.title}
@@ -46,6 +46,18 @@ export default async function HomePage({
                 aspectRatio={project.aspectRatio}
               />
             ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href={`/${lang}/work`}
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary/90"
+            >
+              {dict.work.view_all}
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
