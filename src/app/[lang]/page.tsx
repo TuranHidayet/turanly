@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import { Hero } from "@/components/Hero";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { BlogCard } from "@/components/BlogCard";
+import { ContactForm } from "@/components/ContactForm";
 import projects from "@/data/projects.json";
-import profile from "@/data/profile.json";
 
 export default async function HomePage({
   params,
@@ -71,26 +71,12 @@ export default async function HomePage({
 
       <section className="section-padding bg-zinc-50/50 dark:bg-zinc-900/50">
         <div className="container-main">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="mb-3 text-3xl font-bold">{dict.contact.title}</h2>
-            <p className="mb-8 text-zinc-500 dark:text-zinc-400">{dict.contact.subtitle}</p>
-            <a
-              href={profile.social.email}
-              className="mb-8 inline-block text-lg font-medium text-primary hover:underline"
-            >
-              {profile.email}
-            </a>
-            <div className="flex justify-center gap-4">
-              <a href={profile.social.github} target="_blank" rel="noopener noreferrer" className="btn-outline">
-                GitHub
-              </a>
-              <a href={profile.social.linkedin} target="_blank" rel="noopener noreferrer" className="btn-outline">
-                LinkedIn
-              </a>
-              <a href={profile.social.email} className="btn-outline">
-                Email
-              </a>
+          <div className="mx-auto max-w-2xl">
+            <div className="mb-12 text-center">
+              <h2 className="mb-3 text-3xl font-bold">{dict.contact.title}</h2>
+              <p className="text-zinc-500 dark:text-zinc-400">{dict.contact.subtitle}</p>
             </div>
+            <ContactForm dict={dict} />
           </div>
         </div>
       </section>
