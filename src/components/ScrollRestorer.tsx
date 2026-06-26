@@ -16,7 +16,10 @@ export function ScrollRestorer() {
       setTimeout(scroll, 50);
       setTimeout(scroll, 200);
       setTimeout(scroll, 500);
-      setTimeout(scroll, 1000);
+      setTimeout(() => {
+        scroll();
+        history.scrollRestoration = "auto";
+      }, 1000);
     }
   }, []);
 
