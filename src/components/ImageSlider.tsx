@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 interface ImageSliderProps {
   images: string[];
@@ -11,6 +11,7 @@ interface ImageSliderProps {
 export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSliderProps) {
   const [current, setCurrent] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const touchStartX = useRef(0);
 
   const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % images.length);
@@ -19,6 +20,18 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
   const prev = useCallback(() => {
     setCurrent((prev) => (prev - 1 + images.length) % images.length);
   }, [images.length]);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) next();
+      else prev();
+    }
+  }, [next, prev]);
 
   useEffect(() => {
     if (images.length <= 1 || isHovered) return;
@@ -45,6 +58,8 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
       style={{ aspectRatio }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       {images.map((src, i) => (
         <div
@@ -65,7 +80,7 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
         <>
           <button
             onClick={prev}
-            className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white opacity-0 transition-opacity hover:bg-black/60 group-hover:opacity-100"
+            className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white transition-opacity hover:bg-black/60 md:opacity-0 md:group-hover:opacity-100"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -73,7 +88,7 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
           </button>
           <button
             onClick={next}
-            className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white opacity-0 transition-opacity hover:bg-black/60 group-hover:opacity-100"
+            className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white transition-opacity hover:bg-black/60 md:opacity-0 md:group-hover:opacity-100"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
