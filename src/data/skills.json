@@ -1,18 +1,16 @@
 [
-  { "name": "PHP", "level": "expert", "icon": "php" },
-  { "name": "Laravel", "level": "expert", "icon": "laravel" },
-  { "name": "MySQL", "level": "expert", "icon": "mysql" },
-  { "name": "JavaScript", "level": "advanced", "icon": "javascript" },
   { "name": "HTML / CSS", "level": "expert", "icon": "html" },
   { "name": "SCSS", "level": "advanced", "icon": "scss" },
-  { "name": "TailwindCSS", "level": "advanced", "icon": "tailwind" },
   { "name": "Bootstrap", "level": "advanced", "icon": "bootstrap" },
-  { "name": "JQuery", "level": "advanced", "icon": "jquery" },
-  { "name": "Next.js", "level": "intermediate", "icon": "nextjs" },
+  { "name": "TailwindCSS", "level": "advanced", "icon": "tailwind" },
+  { "name": "JavaScript", "level": "advanced", "icon": "javascript" },
+  { "name": "JQuery", "level": "intermediate", "icon": "jquery" },
+  { "name": "PHP", "level": "expert", "icon": "php" },
+  { "name": "Laravel", "level": "expert", "icon": "laravel" },
   { "name": "Livewire", "level": "intermediate", "icon": "livewire" },
-  { "name": "Git & GitHub", "level": "advanced", "icon": "git" },
-  { "name": "GitLab", "level": "intermediate", "icon": "gitlab" },
+  { "name": "MySQL", "level": "expert", "icon": "mysql" },
   { "name": "MVC Architecture", "level": "expert", "icon": "mvc" },
-  { "name": "RBAC", "level": "advanced", "icon": "rbac" },
-  { "name": "Agile / Scrum", "level": "intermediate", "icon": "agile" }
+  { "name": "Next.js", "level": "intermediate", "icon": "nextjs" },
+  { "name": "Git & GitHub", "level": "advanced", "icon": "git" },
+  { "name": "GitLab", "level": "intermediate", "icon": "gitlab" }
 ]
