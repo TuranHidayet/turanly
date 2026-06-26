@@ -17,8 +17,13 @@ export default async function HomePage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const posts = dict.blog.posts;
-  const firstPost = Object.entries(posts)[0];
+  const posts = Object.entries(dict.blog.posts).map(([slug, post]: [string, any]) => ({
+    slug,
+    title: post.title,
+    description: post.description,
+    date: post.date,
+    image: post.image,
+  }));
 
   return (
     <>
@@ -54,17 +59,31 @@ export default async function HomePage({
             <p className="text-zinc-500 dark:text-zinc-400">{dict.blog.subtitle}</p>
           </div>
 
-          <div className="mx-auto max-w-2xl">
-            {firstPost && (
+          <div className="grid gap-6 md:grid-cols-3">
+            {posts.map((post) => (
               <BlogCard
-                title={firstPost[1].title}
-                description={firstPost[1].description}
-                date={firstPost[1].date}
-                slug={firstPost[0]}
+                key={post.slug}
+                title={post.title}
+                description={post.description}
+                date={post.date}
+                image={post.image}
+                slug={post.slug}
                 lang={lang}
                 readMore={dict.blog.read_more}
               />
-            )}
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href={`/${lang}/blog`}
+              className="inline-flex items-center gap-2 rounded-lg border border-zinc-300 px-6 py-3 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
+            >
+              {dict.blog.view_all}
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

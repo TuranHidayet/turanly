@@ -39,6 +39,7 @@
     "read_more": "Read More",
     "no_posts": "No posts yet.",
     "back": "Back",
+    "view_all": "View All Posts",
     "posts": {
       "git-beginners-guide": {
         "title": "Version Control with Git: A Beginner's Guide",
