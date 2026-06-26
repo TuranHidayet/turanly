@@ -14,10 +14,10 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, description, tags, images, url, github, liveDemo, sourceCode, aspectRatio }: ProjectCardProps) {
   return (
-    <div className="card group overflow-hidden">
+    <div className="card group w-full overflow-hidden">
       <ImageSlider images={images} alt={title} aspectRatio={aspectRatio} />
 
-      <div className="mt-4 min-h-[130px]">
+      <div className="mt-4 h-[130px]">
         <h3 className="mb-2 text-lg font-semibold">{title}</h3>
         <p className="mb-4 text-sm leading-relaxed text-zinc-600 line-clamp-4 dark:text-zinc-400">{description}</p>
 
