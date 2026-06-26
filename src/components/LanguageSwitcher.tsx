@@ -19,10 +19,12 @@ export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
     return parts.join("/") || "/";
   }
 
-  function handleClick(locale: Locale) {
-    sessionStorage.setItem("scrollY", String(window.scrollY));
+  function handleClick(e: React.MouseEvent, locale: Locale) {
+    e.preventDefault();
+    const scrollY = window.scrollY;
     history.scrollRestoration = "manual";
-    router.push(switchHref(locale), { scroll: false });
+    sessionStorage.setItem("scrollY", String(scrollY));
+    router.replace(switchHref(locale), { scroll: false });
   }
 
   return (
@@ -30,7 +32,7 @@ export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
       {locales.map((locale) => (
         <button
           key={locale}
-          onClick={() => handleClick(locale)}
+          onClick={(e) => handleClick(e, locale)}
           className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-colors ${
             locale === currentLang
               ? "bg-primary text-white"

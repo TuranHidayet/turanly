@@ -2,7 +2,6 @@ import { getDictionary, hasLocale, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ScrollRestorer } from "@/components/ScrollRestorer";
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -23,7 +22,6 @@ export default async function LocaleLayout({
 
   return (
     <>
-      <ScrollRestorer />
       <Navbar dict={dict} lang={lang as Locale} />
       <main className="flex-1">{children}</main>
       <Footer dict={dict} lang={lang as Locale} />
