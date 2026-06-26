@@ -17,7 +17,6 @@ export function Hero({ dict, lang }: HeroProps) {
         </p>
 
         <h1 className="mb-6 text-5xl font-bold tracking-tight md:text-7xl">
-          {dict.hero.greeting}{" "}
           <span className="gradient-text">{dict.hero.title}</span>
         </h1>
 
