@@ -59,7 +59,7 @@ export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) 
           style={{ transform: `translateX(-${page * 100}%)` }}
         >
           {windows.map((group, i) => (
-            <div key={i} className="mx-auto max-w-md min-w-full shrink-0">
+            <div key={i} className="w-full shrink-0">
               {group.map((project) => (
                 <ProjectCard
                   key={`${i}-${project.id}`}
