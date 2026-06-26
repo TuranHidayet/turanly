@@ -8,7 +8,7 @@
   },
   "hero": {
     "greeting": "Salam, mən",
-    "title": "Turan Hidayetov",
+    "title": "Turan Hidayətov",
     "subtitle": "Full-Stack Web Developer",
     "description": "PHP, Laravel və MySQL ilə backend development, RESTful API və MVC architecture üzrə ixtisaslaşmış full-stack developer.",
     "cta_work": "İşlərimə Bax",
@@ -16,7 +16,7 @@
   },
   "about": {
     "title": "Haqqımda",
-    "bio": "Mən Turan Hidayetov, full-stack web developer. PHP və Laravel ilə backend development, RESTful API, MySQL/PostgreSQL, MVC architecture üzrə təcrübəm var. Courier, taksi, logistika, anbar idarəetməsi və dövlət portalları kimi müxtəlif sahələrdə layihələr hazırlamışam.",
+    "bio": "Mən Turan Hidayətov, full-stack web developer. PHP və Laravel ilə backend development, RESTful API, MySQL/PostgreSQL, MVC architecture üzrə təcrübəm var. Courier, taksi, logistika, anbar idarəetməsi və dövlət portalları kimi müxtəlif sahələrdə layihələr hazırlamışam.",
     "experience": "Təcrübə",
     "education": "Təhsil",
     "skills": "Bacarıqlar",

@@ -1,4 +1,4 @@
-import { getDictionary, hasLocale, locales, type Locale } from "@/lib/i18n";
+import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/BlogCard";
 
@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  return { title: `${dict.blog.title} | Turan Hidayetov` };
+  return { title: `${dict.blog.title} | ${getFullName(lang as Locale)}` };
 }
 
 export default async function BlogPage({

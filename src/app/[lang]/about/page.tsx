@@ -1,4 +1,4 @@
-import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
+import { getDictionary, hasLocale, getFullName, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { TimelineItem } from "@/components/Timeline";
 import { SkillBadge } from "@/components/SkillBadge";
@@ -13,7 +13,7 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  return { title: `${dict.about.title} | Turan Hidayetov` };
+  return { title: `${dict.about.title} | ${getFullName(lang as Locale)}` };
 }
 
 export default async function AboutPage({

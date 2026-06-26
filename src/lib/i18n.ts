@@ -15,3 +15,11 @@ export const hasLocale = (locale: string): locale is Locale =>
 export const getDictionary = async (locale: Locale) => messages[locale]();
 
 export type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
+
+const names: Record<Locale, string> = {
+  az: "Turan Hidayətov",
+  en: "Turan Hidayatov",
+  ru: "Туран Хидаятов",
+};
+
+export const getFullName = (locale: Locale): string => names[locale];

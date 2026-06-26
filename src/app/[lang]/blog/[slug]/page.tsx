@@ -1,4 +1,4 @@
-import { getDictionary, hasLocale, locales, type Locale } from "@/lib/i18n";
+import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export async function generateMetadata({
   const dict = await getDictionary(lang as Locale);
   const post = dict.blog.posts[slug as keyof typeof dict.blog.posts];
   return {
-    title: post ? `${post.title} | Turan Hidayetov` : "Blog",
+    title: post ? `${post.title} | ${getFullName(lang as Locale)}` : "Blog",
   };
 }
 

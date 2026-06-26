@@ -1,4 +1,4 @@
-import { type Locale, type Dictionary } from "@/lib/i18n";
+import { type Locale, type Dictionary, getFullName } from "@/lib/i18n";
 import profile from "@/data/profile.json";
 
 export function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
@@ -38,7 +38,7 @@ export function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
           </div>
 
           <p className="text-sm text-zinc-400">
-            © {new Date().getFullYear()} {profile.name}. {dict.footer.copyright}
+            © {new Date().getFullYear()} {getFullName(lang)}. {dict.footer.copyright}
           </p>
         </div>
       </div>
