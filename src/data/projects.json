@@ -112,23 +112,6 @@
     "aspectRatio": "16 / 9"
   },
   {
-    "id": 7,
-    "title": "EDM — Electronic Data Management",
-    "description_az": "Azerishiq OJSC üçün elektron data idarəetmə sistemi. EV charging stansiyaları üçün web platforma, API və third-party integration.",
-    "description_en": "Electronic Data Management System for Azerishiq OJSC. Web platform for EV charging stations, API development, third-party integrations.",
-    "description_ru": "Система электронного управления данными для Azerishiq OJSC. Веб-платформа для зарядных станций, разработка API, интеграция со сторонними сервисами.",
-    "images": [
-      "/images/projects/edm-1.jpg",
-      "/images/projects/edm-2.jpg"
-    ],
-    "tags": ["PHP", "Laravel", "MySQL", "API", "Frontend"],
-    "category": "fullstack",
-    "url": "",
-    "github": "",
-    "featured": false,
-    "aspectRatio": "16 / 9"
-  },
-  {
     "id": 8,
     "title": "RAF Consulting — Accounting & Finance",
     "description_az": "RAF Consulting Services üçün peşəkar mühasibat və maliyyə konsaltinq veb-saytı. Mühasibat xidmətləri, vergi məsləhətləri, maliyyə konsaltinqi, IFRS hesabatlığı, autsors CFO və bank hesabatlığı.",
