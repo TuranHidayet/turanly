@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   title: "Turan Hidayatov | Full-Stack Web Developer",
   description: "Full-Stack Web Developer - Modern web applications",
   icons: {
-    icon: "/images/turanly-icon.svg",
+    icon: [
+      { url: "/icon", type: "image/svg+xml" },
+      { url: "/images/turanly-icon.svg", type: "image/svg+xml" },
+    ],
     shortcut: "/images/turanly-favicon.svg",
   },
 };
