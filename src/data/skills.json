@@ -9,7 +9,6 @@
   { "name": "Laravel", "level": "expert", "icon": "laravel" },
   { "name": "Livewire", "level": "intermediate", "icon": "livewire" },
   { "name": "MySQL", "level": "expert", "icon": "mysql" },
-  { "name": "MVC Architecture", "level": "expert", "icon": "mvc" },
   { "name": "Next.js", "level": "intermediate", "icon": "nextjs" },
   { "name": "Git & GitHub", "level": "advanced", "icon": "git" },
   { "name": "GitLab", "level": "intermediate", "icon": "gitlab" }
