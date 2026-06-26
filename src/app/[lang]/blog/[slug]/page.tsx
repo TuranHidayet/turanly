@@ -77,7 +77,7 @@ export default async function BlogPostPage({
 
               <h2>{post.start_title}</h2>
               <p>{post.start_desc}</p>
-              <pre><code>{post.code}</code></pre>
+              <pre className="overflow-x-auto whitespace-pre-wrap break-all rounded-xl bg-zinc-100 p-4 text-sm dark:bg-zinc-800"><code>{post.code}</code></pre>
 
               <h2>{post.conclusion_title}</h2>
               <p>{post.conclusion_desc}</p>
