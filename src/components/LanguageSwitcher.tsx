@@ -21,6 +21,7 @@ export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
 
   function handleClick(locale: Locale) {
     sessionStorage.setItem("scrollY", String(window.scrollY));
+    history.scrollRestoration = "manual";
     router.push(switchHref(locale), { scroll: false });
   }
 

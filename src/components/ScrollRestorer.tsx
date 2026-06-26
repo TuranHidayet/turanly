@@ -6,8 +6,13 @@ export function ScrollRestorer() {
   useEffect(() => {
     const saved = sessionStorage.getItem("scrollY");
     if (saved) {
-      window.scrollTo(0, Number(saved));
       sessionStorage.removeItem("scrollY");
+      const target = Number(saved);
+
+      const scroll = () => window.scrollTo(0, target);
+      requestAnimationFrame(scroll);
+      setTimeout(scroll, 100);
+      setTimeout(scroll, 300);
     }
   }, []);
 
