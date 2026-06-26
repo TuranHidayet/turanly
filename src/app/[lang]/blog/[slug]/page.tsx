@@ -2,10 +2,12 @@ import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/l
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
+const allSlugs = ["git-beginners-guide", "clean-code-principles", "web-development-guide"];
+
 export async function generateStaticParams() {
-  return locales.flatMap((lang) => [
-    { lang, slug: "getting-started-nextjs" },
-  ]);
+  return locales.flatMap((lang) =>
+    allSlugs.map((slug) => ({ lang, slug }))
+  );
 }
 
 export async function generateMetadata({
@@ -32,7 +34,7 @@ export default async function BlogPostPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const post = dict.blog.posts[slug as keyof typeof dict.blog.posts];
+  const post = (dict.blog.posts as any)[slug];
 
   if (!post) notFound();
 
@@ -50,6 +52,14 @@ export default async function BlogPostPage({
               </svg>
               {dict.blog.back}
             </Link>
+
+            {post.image && (
+              <img
+                src={post.image}
+                alt={post.title}
+                className="mb-8 w-full rounded-2xl object-cover"
+              />
+            )}
 
             <h1 className="mb-4 text-4xl font-bold">{post.body_title}</h1>
             <p className="mb-8 text-sm text-zinc-400">{post.date}</p>

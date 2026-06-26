@@ -79,7 +79,7 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
       {images.length > 1 && (
         <>
           <button
-            onClick={prev}
+            onClick={(e) => { e.stopPropagation(); prev(); }}
             className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white transition-opacity hover:bg-black/60 md:opacity-0 md:group-hover:opacity-100"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -87,7 +87,7 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
             </svg>
           </button>
           <button
-            onClick={next}
+            onClick={(e) => { e.stopPropagation(); next(); }}
             className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white transition-opacity hover:bg-black/60 md:opacity-0 md:group-hover:opacity-100"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -97,9 +97,9 @@ export function ImageSlider({ images, alt, aspectRatio = "16 / 9" }: ImageSlider
 
           <div className="absolute right-0 bottom-0 left-0 z-10 flex justify-center gap-1.5 p-3">
             {images.map((_, i) => (
-              <button
+                <button
                 key={i}
-                onClick={() => setCurrent(i)}
+                onClick={(e) => { e.stopPropagation(); setCurrent(i); }}
                 className={`h-1.5 rounded-full transition-all ${
                   i === current ? "w-6 bg-white" : "w-1.5 bg-white/50"
                 }`}

@@ -40,26 +40,72 @@
     "no_posts": "No posts yet.",
     "back": "Back",
     "posts": {
-      "getting-started-nextjs": {
-        "title": "Getting Started with Next.js",
-        "description": "Learn how to build modern web applications with Next.js",
+      "git-beginners-guide": {
+        "title": "Version Control with Git: A Beginner's Guide",
+        "description": "Learn the fundamentals of Git and version control systems",
         "date": "Jun 15, 2026",
-        "body_title": "Getting Started with Next.js",
-        "paragraph1": "Next.js is a React framework that enables you to build fast, SEO-friendly web applications. In this post, we'll explore the basics of Next.js and how to get started.",
-        "why_title": "Why Next.js?",
-        "why_desc": "Next.js provides many features out of the box, including:",
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=450&fit=crop",
+        "body_title": "Version Control with Git: A Beginner's Guide",
+        "paragraph1": "Version control is one of the most essential tools in software development. Git is the most popular version control system today and every developer should know it. In this post, we'll explain the core concepts and workflow of Git.",
+        "why_title": "Why Git Matters?",
+        "why_desc": "Key benefits of using Git:",
         "features": [
-          "Server-side rendering and static generation",
-          "File-based routing",
-          "API routes",
-          "Built-in CSS and image optimization",
-          "TypeScript support"
+          "Version history — track every change to your code",
+          "Branching — create parallel development lines",
+          "Collaboration — easily work with team members",
+          "Backup — all versions of your code are preserved",
+          "Merge — combine changes and resolve conflicts"
         ],
-        "start_title": "Getting Started",
-        "start_desc": "To create a new Next.js project, run the following command:",
-        "code": "npx create-next-app@latest my-app",
+        "start_title": "Essential Commands",
+        "start_desc": "The most important commands to work with Git:",
+        "code": "# Create a new repository\ngit init\n\n# Stage and commit changes\ngit add .\ngit commit -m \"Initial commit\"\n\n# Create and switch to a branch\ngit branch feature-login\ngit checkout feature-login\n\n# Merge changes\ngit merge feature-login\n\n# Push to remote repository\ngit push origin main",
         "conclusion_title": "Conclusion",
-        "conclusion_desc": "Next.js is an excellent choice for building modern web applications. With its powerful features and great developer experience, it's no wonder it's one of the most popular frameworks today."
+        "conclusion_desc": "Git is an indispensable part of modern programming. Learning the basic commands and integrating them into your daily workflow is a crucial step in your developer career."
+      },
+      "clean-code-principles": {
+        "title": "Clean Code Principles for Beginners",
+        "description": "Learn the fundamental principles of writing clean, maintainable code",
+        "date": "Jun 10, 2026",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=450&fit=crop",
+        "body_title": "Clean Code Principles for Beginners",
+        "paragraph1": "Writing clean code is one of the most important skills that separates experienced programmers from beginners. In this post, you'll learn the essential principles of writing clean, maintainable code and how to apply them in your projects.",
+        "why_title": "Why Clean Code Matters",
+        "why_desc": "Benefits of writing clean code:",
+        "features": [
+          "Readability — code is easily understood by other developers",
+          "Maintainability — making changes and adding features becomes easier",
+          "Debugging — finding and fixing bugs is faster",
+          "Teamwork — better collaboration among team members",
+          "Testing — writing testable code becomes simpler"
+        ],
+        "start_title": "Key Principles",
+        "start_desc": "Essential principles for writing clean code:",
+        "code": "// Use meaningful names — choose names that reveal intent\n// Bad: function d(a, b) { return a - b; }\n// Good: function calculateRemaining(budget, spent) { return budget - spent; }\n\n// DRY — Don't Repeat Yourself\n// KISS — Keep It Simple, Stupid\n// Single Responsibility — each function should do one thing",
+        "conclusion_title": "Conclusion",
+        "conclusion_desc": "Writing clean code is a skill that takes time to develop, but it pays off in the long run. Readable, simple, and maintainable code is one of the most important steps toward becoming a professional developer."
+      },
+      "web-development-guide": {
+        "title": "How to Start Web Development",
+        "description": "A complete beginner's guide to starting your web development journey in 2026",
+        "date": "Jun 5, 2026",
+        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=450&fit=crop",
+        "body_title": "How to Start Web Development",
+        "paragraph1": "Web development is one of the most popular and rewarding careers today. In this guide, we'll explain how to get started in web development, which technologies to learn, and how to take your first steps.",
+        "why_title": "What Technologies Should You Learn?",
+        "why_desc": "The essential technologies you need to master for web development:",
+        "features": [
+          "HTML & CSS — structure and styling of web pages",
+          "JavaScript — interactivity and dynamic functionality",
+          "Frontend Framework (React, Vue) — build user interfaces",
+          "Backend (Node.js, PHP, Python) — server-side programming",
+          "Database (MySQL, PostgreSQL) — data storage and management",
+          "Version Control (Git) — manage code versions"
+        ],
+        "start_title": "First Steps",
+        "start_desc": "A step-by-step plan to start web development:",
+        "code": "// 1. Start with HTML and CSS\n// 2. Learn JavaScript fundamentals\n// 3. Build small projects (calculator, todo list)\n// 4. Get familiar with Git and GitHub\n// 5. Choose a frontend framework and dive deep\n// 6. Pick a backend technology\n// 7. Build a full-stack project",
+        "conclusion_title": "Conclusion",
+        "conclusion_desc": "Web development is an exciting and dynamic field. While there's a lot to learn at the beginning, if you take it step by step and practice consistently, you'll achieve great results in no time. Remember: the best way to learn is by building!"
       }
     }
   },

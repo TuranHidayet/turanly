@@ -27,11 +27,12 @@ export default async function BlogPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const posts = Object.entries(dict.blog.posts).map(([slug, post]) => ({
+  const posts = Object.entries(dict.blog.posts).map(([slug, post]: [string, any]) => ({
     slug,
     title: post.title,
     description: post.description,
     date: post.date,
+    image: post.image,
   }));
 
   return (
@@ -43,20 +44,20 @@ export default async function BlogPage({
             <p className="text-zinc-500 dark:text-zinc-400">{dict.blog.subtitle}</p>
           </div>
 
-          <div className="mx-auto max-w-2xl space-y-6">
-            {posts.length > 0 ? (
-              posts.map((post) => (
+          {posts.length > 0 ? (
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {posts.map((post) => (
                 <BlogCard
                   key={post.slug}
                   {...post}
                   lang={lang}
                   readMore={dict.blog.read_more}
                 />
-              ))
-            ) : (
-              <p className="text-center text-zinc-500">{dict.blog.no_posts}</p>
-            )}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-center text-zinc-500">{dict.blog.no_posts}</p>
+          )}
         </div>
       </section>
     </div>

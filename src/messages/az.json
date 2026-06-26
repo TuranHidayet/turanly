@@ -40,26 +40,72 @@
     "no_posts": "Hələ heç bir yazı yoxdur.",
     "back": "Geri",
     "posts": {
-      "getting-started-nextjs": {
-        "title": "Next.js ilə Tanışlıq",
-        "description": "Next.js ilə müasir web tətbiqləri necə qurmağı öyrənin",
+      "git-beginners-guide": {
+        "title": "Git ilə Versiya İdarəetmə: Başlanğıc Bələdçisi",
+        "description": "Git və versiya idarəetmə sistemlərinin əsaslarını öyrənin",
         "date": "15 İyun, 2026",
-        "body_title": "Next.js ilə Tanışlıq",
-        "paragraph1": "Next.js sürətli, SEO-friendly web tətbiqləri qurmağa imkan verən bir React framework-üdür. Bu yazıda Next.js-in əsaslarını və necə başlamağı öyrənəcəyik.",
-        "why_title": "Niyə Next.js?",
-        "why_desc": "Next.js bir çox xüsusiyyəti out-of-the-box təqdim edir, bunlara daxildir:",
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=450&fit=crop",
+        "body_title": "Git ilə Versiya İdarəetmə: Başlanğıc Bələdçisi",
+        "paragraph1": "Versiya idarəetmə sistemi (VCS) proqram təminatının inkişafında ən vacib alətlərdən biridir. Git bu gün ən populyar VCS-dir və hər bir developer tərəfindən bilinməlidir. Bu yazıda Git-in əsas anlayışlarını və iş axınını izah edəcəyik.",
+        "why_title": "Niyə Git Vacibdir?",
+        "why_desc": "Git istifadə etməyin əsas üstünlükləri:",
         "features": [
-          "Server-side rendering və statik generasiya",
-          "Fayl əsaslı routing",
-          "API routes",
-          "Built-in CSS və şəkil optimizasiyası",
-          "TypeScript dəstəyi"
+          "Versiya tarixçəsi — kodun hər dəyişikliyini izləmək imkanı",
+          "Branching — paralel inkişaf xətləri yaratmaq",
+          "Collaboration — komanda üzvləri ilə asan əməkdaşlıq",
+          "Backup — kodun bütün versiyalarının qorunması",
+          "Merge — dəyişiklikləri birləşdirmək və konfliktləri həll etmək"
         ],
-        "start_title": "Başlamaq",
-        "start_desc": "Yeni Next.js layihəsi yaratmaq üçün aşağıdakı əmri işə salın:",
-        "code": "npx create-next-app@latest my-app",
+        "start_title": "Əsas Əmrlər",
+        "start_desc": "Git ilə işləmək üçün ən vacib əmrlər:",
+        "code": "# Yeni repository yaratmaq\ngit init\n\n# Dəyişiklikləri əlavə etmək\ngit add .\ngit commit -m \"İlk commit\"\n\n# Branch yaratmaq və keçmək\ngit branch feature-login\ngit checkout feature-login\n\n# Dəyişiklikləri birləşdirmək\ngit merge feature-login\n\n# Remote repository-yə push etmək\ngit push origin main",
         "conclusion_title": "Nəticə",
-        "conclusion_desc": "Next.js müasir web tətbiqləri qurmaq üçün əla seçimdir. Güclü xüsusiyyətləri və əla developer təcrübəsi ilə bu gün ən populyar framework-lərdən biridir."
+        "conclusion_desc": "Git müasir proqramlaşdırmanın ayrılmaz bir hissəsidir. Əsas əmrləri öyrənmək və gündəlik iş axınınıza inteqrasiya etmək developer karyeranızda mühüm addımdır."
+      },
+      "clean-code-principles": {
+        "title": "Təmiz Kod Yazma Prinsipləri",
+        "description": "Oxunaqlı və davamlı kod yazmağın əsas prinsipləri haqqında",
+        "date": "10 İyun, 2026",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=450&fit=crop",
+        "body_title": "Təmiz Kod Yazma Prinsipləri",
+        "paragraph1": "Təmiz kod yazmaq təcrübəli proqramçıları başlanğıclardan ayıran ən vacib bacarıqlardan biridir. Bu yazıda təmiz kod yazmağın əsas prinsiplərini və onları layihələrinizdə necə tətbiq edəcəyinizi öyrənəcəksiniz.",
+        "why_title": "Niyə Təmiz Kod Vacibdir?",
+        "why_desc": "Təmiz kod yazmağın faydaları:",
+        "features": [
+          "Oxunaqlılıq — kod digər developerlər tərəfindən asan başa düşülür",
+          "Davamlılıq — dəyişikliklər etmək və yeni xüsusiyyətlər əlavə etmək asanlaşır",
+          "Debugging — səhvləri tapmaq və düzəltmək daha sürətli olur",
+          "Teamwork — komanda üzvləri arasında daha yaxşı əməkdaşlıq",
+          "Test yazma — test edilə bilən kod yazmaq asanlaşır"
+        ],
+        "start_title": "Əsas Prinsiplər",
+        "start_desc": "Təmiz kod yazmaq üçün bəzi vacib prinsiplər:",
+        "code": "// PIS adlandırma — nə etdiyi aydın olan adlar seçin\n// Pis: function d(a, b) { return a - b; }\n// Yaxsi: function calculateRemaining(budget, spent) { return budget - spent; }\n\n// DRY — təkrarlanan kodu funksiyalara çıxarın\n// KISS — sadə saxlayın, mürəkkəbləşdirməyin\n// Single Responsibility — hər funksiya tək bir iş görsün",
+        "conclusion_title": "Nəticə",
+        "conclusion_desc": "Təmiz kod yazmaq vaxt aparan bir bacarıqdır, ancaq uzun müddətdə böyük fayda verir. Oxunaqlı, sadə və davamlı kod yazmaq peşəkar developer olmağın ən vacib addımlarından biridir."
+      },
+      "web-development-guide": {
+        "title": "Web Developmentə Başlamaq Bələdçisi",
+        "description": "2026-cı ildə web development dünyasına ilk addımı atmaq üçün bələdçi",
+        "date": "5 İyun, 2026",
+        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=450&fit=crop",
+        "body_title": "Web Developmentə Başlamaq Bələdçisi",
+        "paragraph1": "Web development bu günün ən populyar və gəlirli peşələrindən biridir. Bu yazıda web development dünyasına necə başlamağı, hansı texnologiyaları öyrənməyi və ilk addımları necə atmağı izah edəcəyik.",
+        "why_title": "Hansı Texnologiyaları Öyrənməli?",
+        "why_desc": "Web developmentə başlamaq üçün əsaddan mənimsəməli olduğunuz texnologiyalar:",
+        "features": [
+          "HTML & CSS — web səhifələrinin struktur və görünüşü",
+          "JavaScript — interaktivlik və dinamik funksionallıq",
+          "Frontend Framework (React, Vue) — istifadəçi interfeysi qurmaq",
+          "Backend (Node.js, PHP, Python) — server tərəfli proqramlaşdırma",
+          "Database (MySQL, PostgreSQL) — məlumat saxlama və idarəetmə",
+          "Version Control (Git) — kodun versiyalarını idarə etmək"
+        ],
+        "start_title": "İlk Addımlar",
+        "start_desc": "Web developmentə başlamaq üçün addım-addım plan:",
+        "code": "// 1. HTML və CSS ilə başlayın\n// 2. JavaScript əsaslarını öyrənin\n// 3. Kiçik layihələr hazırlayın (kalkulyator, todo list)\n// 4. Git və GitHub ilə tanış olun\n// 5. Frontend framework seçin və dərinləşin\n// 6. Backend texnologiyası seçin\n// 7. Full-stack layihə hazırlayın",
+        "conclusion_title": "Nəticə",
+        "conclusion_desc": "Web development maraqlı və dinamik bir sahədir. Başlanğıcda çox məlumat olsa da, addım-addım irəliləsəniz və daim təcrübə etsəniz, qısa müddətdə yaxşı nəticələr əldə edə bilərsiniz. Unutmayın: ən yaxşı öyrənmə üsulu yazmaqdır!"
       }
     }
   },

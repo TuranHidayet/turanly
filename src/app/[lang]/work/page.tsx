@@ -1,6 +1,6 @@
 import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectGallery } from "@/components/ProjectGallery";
 import projects from "@/data/projects.json";
 
 export default async function WorkPage({
@@ -13,7 +13,7 @@ export default async function WorkPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const descriptionKey = `description_${lang}` as keyof typeof projects[0];
+  const descriptionKey = `description_${lang}`;
 
   return (
     <div className="pt-24">
@@ -24,22 +24,12 @@ export default async function WorkPage({
             <p className="text-zinc-500 dark:text-zinc-400">{dict.work.subtitle}</p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                description={String(project[descriptionKey])}
-                tags={project.tags}
-                images={project.images}
-                url={project.url}
-                github={project.github}
-                liveDemo={dict.work.live_demo}
-                sourceCode={dict.work.source_code}
-                aspectRatio={project.aspectRatio}
-              />
-            ))}
-          </div>
+          <ProjectGallery
+            projects={projects}
+            lang={lang}
+            dict={dict}
+            descriptionKey={descriptionKey}
+          />
         </div>
       </section>
     </div>

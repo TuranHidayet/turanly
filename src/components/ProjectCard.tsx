@@ -14,12 +14,12 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, description, tags, images, url, github, liveDemo, sourceCode, aspectRatio }: ProjectCardProps) {
   return (
-    <div className="card group w-full overflow-hidden">
+    <div className="card group flex h-full w-full flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:bg-zinc-50 hover:shadow-xl dark:hover:bg-zinc-800">
       <ImageSlider images={images} alt={title} aspectRatio={aspectRatio} />
 
-      <div className="mt-4 min-h-[130px]">
+      <div className="mt-4 flex flex-1 flex-col min-h-[130px]">
         <h3 className="mb-2 text-lg font-semibold">{title}</h3>
-        <p className="mb-4 text-sm leading-relaxed text-zinc-600 line-clamp-4 dark:text-zinc-400">{description}</p>
+        <p className="mb-4 flex-1 text-sm leading-relaxed text-zinc-600 line-clamp-4 dark:text-zinc-400">{description}</p>
 
         {url && (
           <a
