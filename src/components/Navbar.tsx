@@ -1,8 +1,11 @@
+"use client";
+
 import { type Locale, type Dictionary } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 interface NavbarProps {
   dict: Dictionary;
@@ -10,6 +13,8 @@ interface NavbarProps {
 }
 
 export function Navbar({ dict, lang }: NavbarProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const navItems = [
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/about`, label: dict.nav.about },
@@ -52,11 +57,46 @@ export function Navbar({ dict, lang }: NavbarProps) {
           ))}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="hidden items-center gap-2 md:flex">
           <LanguageSwitcher currentLang={lang} />
           <ThemeToggle />
         </div>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="flex items-center gap-1 md:hidden"
+          aria-label="Toggle menu"
+        >
+          <svg className="h-6 w-6 text-zinc-600 dark:text-zinc-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            {menuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            )}
+          </svg>
+        </button>
       </nav>
+
+      {menuOpen && (
+        <div className="border-t border-zinc-200 bg-white px-4 pb-6 pt-4 dark:border-zinc-800 dark:bg-zinc-950 md:hidden">
+          <div className="flex flex-col gap-2">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg px-4 py-2.5 text-sm font-medium text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-4 flex items-center gap-2 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+            <LanguageSwitcher currentLang={lang} />
+            <ThemeToggle />
+          </div>
+        </div>
+      )}
     </header>
   );
 }
