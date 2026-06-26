@@ -76,7 +76,6 @@ export default async function AboutPage({
                 <SkillBadge
                   key={skill.name}
                   name={skill.name}
-                  level={skill.level}
                 />
               ))}
             </div>
