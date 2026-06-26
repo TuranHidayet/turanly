@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Turan Hidayatov | Full-Stack Web Developer",
   description: "Full-Stack Web Developer - Modern web applications",
+  verification: {
+    google: "tcP06p7lL1b_s5bjuzqVS28r61F3Y8hioCsFt-reg80",
+  },
   icons: {
     icon: [
       { url: "/icon", type: "image/svg+xml" },
