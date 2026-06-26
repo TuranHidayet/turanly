@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable}`}>
-      <body className="min-h-screen font-sans antialiased">
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} overflow-x-hidden`}>
+      <body className="min-h-screen font-sans antialiased overflow-x-hidden">
         <ScrollRestorer />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

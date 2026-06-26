@@ -18,7 +18,7 @@ export function ContactForm({ dict }: { dict: any }) {
         <input
           type="text"
           required
-          className="w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-sm transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900"
+          className="w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-base transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900"
         />
       </div>
 
@@ -27,7 +27,7 @@ export function ContactForm({ dict }: { dict: any }) {
         <input
           type="email"
           required
-          className="w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-sm transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900"
+          className="w-full rounded-xl border border-zinc-300 bg-white px-4 py-3 text-base transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900"
         />
       </div>
 
@@ -36,7 +36,7 @@ export function ContactForm({ dict }: { dict: any }) {
         <textarea
           required
           rows={5}
-          className="w-full resize-none rounded-xl border border-zinc-300 bg-white px-4 py-3 text-sm transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900"
+          className="w-full resize-none rounded-xl border border-zinc-300 bg-white px-4 py-3 text-base transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900"
         />
       </div>
 
