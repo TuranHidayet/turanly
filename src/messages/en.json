@@ -8,7 +8,7 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "title": "Turan Hidayetov",
+    "title": "Turan Hidayatov",
     "subtitle": "Full-Stack Web Developer",
     "description": "A full-stack developer specialized in PHP, Laravel, and MySQL with expertise in RESTful APIs, MVC architecture, and backend development.",
     "cta_work": "View My Work",
@@ -16,7 +16,7 @@
   },
   "about": {
     "title": "About Me",
-    "bio": "I'm Turan Hidayetov, a full-stack web developer with expertise in PHP and Laravel backend development, RESTful APIs, MySQL/PostgreSQL, and MVC architecture. I have worked on diverse projects including courier, logistics, warehouse management, and government portal platforms.",
+    "bio": "I'm Turan Hidayatov, a full-stack web developer with expertise in PHP and Laravel backend development, RESTful APIs, MySQL/PostgreSQL, and MVC architecture. I have worked on diverse projects including courier, logistics, warehouse management, and government portal platforms.",
     "experience": "Experience",
     "education": "Education",
     "skills": "Skills",
