@@ -78,7 +78,12 @@ export function Navbar({ dict, lang }: NavbarProps) {
       </nav>
 
       {menuOpen && (
-        <div className="border-t border-zinc-200 bg-white px-4 pb-6 pt-4 dark:border-zinc-800 dark:bg-zinc-950 md:hidden">
+        <>
+          <div
+            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden"
+            onClick={() => setMenuOpen(false)}
+          />
+          <div className="relative z-50 border-t border-zinc-200 bg-white px-4 pb-6 pt-4 dark:border-zinc-800 dark:bg-zinc-950 md:hidden">
           <div className="flex flex-col gap-2">
             {navItems.map((item) => (
               <Link
