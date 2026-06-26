@@ -100,7 +100,8 @@ export function Navbar({ dict, lang }: NavbarProps) {
             <LanguageSwitcher currentLang={lang} />
             <ThemeToggle />
           </div>
-        </div>
+          </div>
+        </>
       )}
     </header>
   );
