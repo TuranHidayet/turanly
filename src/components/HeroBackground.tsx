@@ -130,11 +130,10 @@ export function HeroBackground() {
         {underCodes.map((d) => (
           <span
             key={d.id}
-            className="absolute font-mono text-xs font-semibold text-primary/30 dark:text-primary/40"
+            className="absolute font-mono text-xs font-semibold text-primary/20 dark:text-primary/30"
             style={{
               top: `${d.top}%`,
-              animation: `${d.fromRight ? "hb-drift-left" : "hb-drift-right"} ${d.duration}s ${d.delay}s infinite linear`,
-              opacity: d.opacity,
+              animation: `${d.fromRight ? "hb-drift-left" : "hb-drift-right"} ${d.duration}s ${d.delay}s infinite linear backwards`,
             }}
           >
             {d.text}
@@ -197,10 +196,10 @@ export function HeroBackground() {
         {overCodes.map((d) => (
           <span
             key={d.id}
-            className="absolute font-mono text-xs font-semibold"
+            className="absolute font-mono text-xs font-semibold text-primary/20 dark:text-primary/30"
             style={{
               top: `${d.top}%`,
-              animation: `${d.fromRight ? "hb-over-left" : "hb-over-right"} ${d.duration}s ${d.delay}s infinite linear`,
+              animation: `${d.fromRight ? "hb-over-left" : "hb-over-right"} ${d.duration}s ${d.delay}s infinite linear backwards`,
             }}
           >
             {d.text}
