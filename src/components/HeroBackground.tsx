@@ -102,7 +102,7 @@ export function HeroBackground() {
         {driftingCode.map((d) => (
           <span
             key={d.id}
-            className="absolute font-mono text-xs font-semibold text-primary/20 dark:text-primary/30"
+            className="absolute font-mono text-xs font-semibold text-primary/50 dark:text-primary/60"
             style={{
               top: `${d.top}%`,
               animation: `${d.fromRight ? "hb-drift-left" : "hb-drift-right"} ${d.duration}s ${d.delay}s infinite linear backwards`,
