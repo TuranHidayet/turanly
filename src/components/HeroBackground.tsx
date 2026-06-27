@@ -102,9 +102,10 @@ export function HeroBackground() {
         {driftingCode.map((d) => (
           <span
             key={d.id}
-            className="absolute font-mono text-xs font-semibold text-primary/50 dark:text-primary/60"
+            className="absolute font-mono text-xs font-semibold text-primary"
             style={{
               top: `${d.top}%`,
+              opacity: 0.5,
               animation: `${d.fromRight ? "hb-drift-left" : "hb-drift-right"} ${d.duration}s ${d.delay}s infinite linear backwards`,
             }}
           >
@@ -129,10 +130,11 @@ export function HeroBackground() {
         {techWords.map((word, i) => (
           <span
             key={i}
-            className="absolute font-mono text-sm font-bold text-accent/30 dark:text-accent/40"
+            className="absolute font-mono text-sm font-bold text-accent"
             style={{
               left: `${Math.random() * 90 + 5}%`,
               top: `${Math.random() * 90 + 5}%`,
+              opacity: 0.35,
               animation: `hb-float ${6 + Math.random() * 10}s ${Math.random() * 8}s infinite ease-in-out backwards`,
             }}
           >
