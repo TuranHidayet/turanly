@@ -1,5 +1,6 @@
 import { type Locale, type Dictionary } from "@/lib/i18n";
 import Link from "next/link";
+import { HeroBackground } from "./HeroBackground";
 
 interface HeroProps {
   dict: Dictionary;
@@ -9,6 +10,7 @@ interface HeroProps {
 export function Hero({ dict, lang }: HeroProps) {
   return (
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden px-4">
+      <HeroBackground />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
 
       <div className="mx-auto max-w-3xl text-center">
