@@ -25,8 +25,6 @@ const driftingCode = Array.from({ length: 20 }, (_, i) => ({
   delay: Math.random() * 20,
   duration: 12 + Math.random() * 16,
   fromRight: Math.random() > 0.5,
-  opacity: 0.25 + Math.random() * 0.25,
-  over: i < 8,
 }));
 
 const techWords = [
@@ -49,9 +47,6 @@ const orbitItems = Array.from({ length: 8 }, (_, i) => ({
 }));
 
 export function HeroBackground() {
-  const overCodes = driftingCode.filter((d) => d.over);
-  const underCodes = driftingCode.filter((d) => !d.over);
-
   return (
     <>
       <style>{`
@@ -84,31 +79,8 @@ export function HeroBackground() {
           90% { opacity: 1; }
           100% { transform: translateX(-120vw) translateY(20px); opacity: 0; }
         }
-        @keyframes hb-over-right {
-          0% { transform: translateX(-120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
-          10% { opacity: 0.7; }
-          30% { color: rgba(37,99,235,0.3); }
-          40% { color: #ef4444; transform: translateX(-10vw) translateY(-4px); }
-          50% { color: #ef4444; transform: translateX(0) translateY(0); }
-          60% { color: #ef4444; transform: translateX(10vw) translateY(4px); }
-          70% { color: rgba(37,99,235,0.3); }
-          90% { opacity: 0.7; }
-          100% { transform: translateX(120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
-        }
-        @keyframes hb-over-left {
-          0% { transform: translateX(120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
-          10% { opacity: 0.7; }
-          30% { color: rgba(37,99,235,0.3); }
-          40% { color: #ef4444; transform: translateX(10vw) translateY(-4px); }
-          50% { color: #ef4444; transform: translateX(0) translateY(0); }
-          60% { color: #ef4444; transform: translateX(-10vw) translateY(4px); }
-          70% { color: rgba(37,99,235,0.3); }
-          90% { opacity: 0.7; }
-          100% { transform: translateX(-120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
-        }
       `}</style>
 
-      {/* BACKGROUND LAYER - behind everything */}
       <div className="pointer-events-none absolute inset-0 -z-10 select-none overflow-hidden">
         {/* Stars */}
         {stars.map((s) => (
@@ -126,8 +98,8 @@ export function HeroBackground() {
           />
         ))}
 
-        {/* Under text - drifting code behind */}
-        {underCodes.map((d) => (
+        {/* Drifting code */}
+        {driftingCode.map((d) => (
           <span
             key={d.id}
             className="absolute font-mono text-xs font-semibold text-primary/20 dark:text-primary/30"
@@ -161,7 +133,7 @@ export function HeroBackground() {
             style={{
               left: `${Math.random() * 90 + 5}%`,
               top: `${Math.random() * 90 + 5}%`,
-              animation: `hb-float ${6 + Math.random() * 10}s ${Math.random() * 8}s infinite ease-in-out`,
+              animation: `hb-float ${6 + Math.random() * 10}s ${Math.random() * 8}s infinite ease-in-out backwards`,
             }}
           >
             {word}
@@ -175,7 +147,7 @@ export function HeroBackground() {
               key={o.id}
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               style={{
-                animation: `hb-orbit ${o.duration}s ${o.delay}s infinite linear`,
+                animation: `hb-orbit ${o.duration}s ${o.delay}s infinite linear backwards`,
               }}
             >
               <div
@@ -189,22 +161,6 @@ export function HeroBackground() {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* OVERLAY LAYER - passes over the hero text */}
-      <div className="pointer-events-none absolute inset-0 z-20 select-none overflow-hidden">
-        {overCodes.map((d) => (
-          <span
-            key={d.id}
-            className="absolute font-mono text-xs font-semibold text-primary/20 dark:text-primary/30"
-            style={{
-              top: `${d.top}%`,
-              animation: `${d.fromRight ? "hb-over-left" : "hb-over-right"} ${d.duration}s ${d.delay}s infinite linear backwards`,
-            }}
-          >
-            {d.text}
-          </span>
-        ))}
       </div>
     </>
   );
