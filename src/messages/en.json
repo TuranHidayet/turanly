@@ -43,11 +43,11 @@
     "posts": {
       "why-need-website": {
         "title": "Why Your Business Needs a Professional Website",
-        "description": "In the digital age, a professional website is essential for your business success",
+        "description": "From simple showcase sites to complex systems — why your business needs an online presence",
         "date": "Jun 15, 2026",
         "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=450&fit=crop",
         "body_title": "Why Your Business Needs a Professional Website",
-        "paragraph1": "Did you know that 75% of users judge a company's credibility based on its website? In today's digital world, potential clients first search for you online. A professional website is no longer a luxury — it's a necessity for any serious business.",
+        "paragraph1": "Did you know that 75% of users judge a company's credibility based on its website? In today's digital world, potential clients first search for you online. A professional website is no longer a luxury — it's a necessity. Whether you need a simple business card site or a complex e-commerce platform, having an online presence is your business's future.",
         "why_title": "What You Lose Without a Website?",
         "why_desc": "Key benefits of having a professional website:",
         "features": [
@@ -57,33 +57,33 @@
           "Marketing hub — a central place for all your marketing campaigns",
           "Customer insights — analyze visitor behavior and improve your strategy"
         ],
-        "start_title": "What a Professional Website Provides",
-        "start_desc": "A well-crafted website gives your business these opportunities:",
-        "code": "Professional website = 24/7 sales machine\n• Customers can find you day and night\n• Showcase your portfolio and achievements\n• Share customer reviews and success stories\n• Contact information always accessible\n• Get found on Google and other search engines",
+        "start_title": "From Simple Sites to Complex Systems",
+        "start_desc": "Your website can take many forms depending on your business needs. Here are some examples:",
+        "code": "✓ Business card site — simple, informative pages showcasing your business\n✓ E-commerce platform — online sales, order management, payment processing\n✓ Admin panel — content, user, and data management\n✓ CRM system — customer relationship management\n✓ API integration — connect with third-party services (payment, email, SMS)\n✓ Custom dashboard — interactive reports and analytics panels",
         "conclusion_title": "Start Today",
-        "conclusion_desc": "Without an online presence, your business is invisible. If you don't have a professional website, potential customers won't find you — they'll go to your competitors. Take action now and establish your business in the digital world!"
+        "conclusion_desc": "Without an online presence, your business is invisible. Whether it's a simple landing page or a fully functional online platform — if you don't have a professional website, potential customers won't find you. Take action now and establish your business in the digital world!"
       },
-      "choose-right-developer": {
-        "title": "5 Things to Consider Before Hiring a Web Developer",
-        "description": "Essential tips for choosing the right web developer for your project",
+      "planning-website-project": {
+        "title": "5 Things to Know Before Starting a Website Project",
+        "description": "5 essential steps to plan your website project for success",
         "date": "Jun 10, 2026",
-        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop",
-        "body_title": "5 Things to Consider Before Hiring a Web Developer",
-        "paragraph1": "Hiring a web developer is a crucial decision for your business. Choosing the right person can make or break your project. In this post, we'll cover 5 essential things you need to consider before hiring a web developer.",
-        "why_title": "Why the Right Choice Matters",
-        "why_desc": "Benefits of choosing the right developer:",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=450&fit=crop",
+        "body_title": "5 Things to Know Before Starting a Website Project",
+        "paragraph1": "Building a website is an exciting process, but without proper planning, projects often fail to deliver expected results. Whether it's a simple portfolio site or a complex online platform — the key to success is proper planning.",
+        "why_title": "Why Planning Matters?",
+        "why_desc": "Good planning is the foundation of a successful project:",
         "features": [
-          "Quality results — a professional developer meets your expectations",
-          "Time savings — experienced developers deliver faster",
-          "Support and maintenance — ensure your site's longevity",
-          "SEO readiness — your site ranks higher on search engines",
-          "Mobile optimization — perfect display on all devices"
+          "Clear goals — know exactly why you need the website",
+          "Target audience — understand who you're serving",
+          "Functionality — determine which features are essential",
+          "Budget and timeline — set realistic expectations",
+          "Future scalability — ensure your site can grow with you"
         ],
-        "start_title": "What to Look For",
-        "start_desc": "Consider these points when choosing a developer:",
-        "code": "1. Portfolio — review their previous work carefully\n2. Technology stack — ask about the technologies they use\n3. References — contact their past clients\n4. Pricing — choose value, not the cheapest option\n5. Support — do they offer post-launch support?",
+        "start_title": "5 Key Questions",
+        "start_desc": "Ask yourself these questions before starting your project:",
+        "code": "1. Purpose: what problem will your website solve?\n2. Audience: who are your target customers?\n3. Content: what information will you present?\n4. Features: what technical capabilities do you need?\n5. Budget: how much are you ready to invest?",
         "conclusion_title": "Conclusion",
-        "conclusion_desc": "Choosing the right developer is the most important factor for your project's success. Consider their portfolio, technical expertise, references, and support services before making a decision. Remember: the cheapest option often costs more in the long run."
+        "conclusion_desc": "A successful website starts with good planning. Clearly defining your goals, audience, and requirements ensures your project is completed on time and within budget. Remember: a well-planned project is already half done!"
       },
       "successful-website-features": {
         "title": "5 Essential Features of a Successful Website",

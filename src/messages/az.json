@@ -43,11 +43,11 @@
     "posts": {
       "why-need-website": {
         "title": "Biznesinizin Peşəkar Veb Sayta Niyə Ehtiyacı Var?",
-        "description": "Rəqəmsal dövrdə peşəkar veb sayt niyə biznesiniz üçün vacibdir?",
+        "description": "Sadə vitrindən tutmuş mürəkkəb sistemlərə qədər — veb sayt biznesiniz üçün niyə vacibdir?",
         "date": "15 İyun, 2026",
         "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=450&fit=crop",
         "body_title": "Biznesinizin Peşəkar Veb Sayta Niyə Ehtiyacı Var?",
-        "paragraph1": "Rəqəmsal dövrümüzdə potensial müştərilərinizin ilk olaraq sizi internetdə axtardığını bilirdinizmi? Araşdırmalar göstərir ki, istifadəçilərin 75%-i bir şirkət haqqında qərar verməzdən öncə onun veb saytını ziyarət edir. Peşəkar veb sayt artıq lüks deyil, zərurətdir.",
+        "paragraph1": "Rəqəmsal dövrümüzdə potensial müştərilərinizin ilk olaraq sizi internetdə axtardığını bilirdinizmi? Araşdırmalar göstərir ki, istifadəçilərin 75%-i bir şirkət haqqında qərar verməzdən öncə onun veb saytını ziyarət edir. Peşəkar veb sayt artıq lüks deyil, zərurətdir. İstər sadə vizit kartı saytı, istərsə də mürəkkəb e-commerce platforması olsun — online varlıq biznesinizin gələcəyidir.",
         "why_title": "Veb Saytınız Olmazsa Nə İtirirsiniz?",
         "why_desc": "Peşəkar veb sayta sahib olmağın əsas üstünlükləri:",
         "features": [
@@ -57,33 +57,33 @@
           "Marketinq mərkəzi — bütün kampaniyalarınız üçün tək mənbə",
           "Müştəri məlumatları — ziyarətçilərin davranışlarını analiz edin"
         ],
-        "start_title": "Peşəkar Veb Sayt Nə Verir?",
-        "start_desc": "Yaxşı hazırlanmış veb sayt biznesinizə aşağıdakı imkanları yaradır:",
-        "code": "Peşəkar veb sayt = 24/7 satış maşını\n• Müştərilər sizi gecə-gündüz tapa bilər\n• Portfolionuzu nümayiş etdirə bilərsiniz\n• Müştəri rəylərini və uğur hekayələrini paylaşa bilərsiniz\n• Əlaqə məlumatlarınız hər zaman əlçatandır\n• Google-da tapılmaq imkanınız artır",
+        "start_title": "Sadə Saytdan Mürəkkəb Sistemlərə Qədər",
+        "start_desc": "Veb saytınız biznesinizin ehtiyacına görə müxtəlif formalarda ola bilər. Budur bəzi nümunələr:",
+        "code": "✓ Vizit kartı saytı — biznesinizi təqdim edən sadə, informativ səhifələr\n✓ E-commerce platforması — onlayn satış, sifariş idarəetməsi, ödəniş sistemi\n✓ Admin panel — məzmun, istifadəçi və məlumat idarəetməsi\n✓ CRM sistemi — müştəri münasibətlərinin idarə edilməsi\n✓ API inteqrasiyası — üçüncü tərəf xidmətlərlə əlaqə (ödəniş, poçt, SMS)\n✓ Fərdi dashboard — interaktiv hesabat və analiz panelləri",
         "conclusion_title": "Bugün Başlayın",
-        "conclusion_desc": "İnternetsiz biznes bu gün görünməzdir. Peşəkar veb saytınız olmasa, potensial müştəriləriniz sizi tapa bilməz və rəqiblərinizə yönələr. İndi hərəkətə keçin və biznesinizi rəqəmsal dünyada tanıdın!"
+        "conclusion_desc": "İnternetsiz biznes bu gün görünməzdir. İstər sadə bir tanıtım səhifəsi, istərsə də tam funksional onlayn platforma olsun — peşəkar veb saytınız olmasa, potensial müştəriləriniz sizi tapa bilməz. İndi hərəkətə keçin və biznesinizi rəqəmsal dünyada tanıdın!"
       },
-      "choose-right-developer": {
-        "title": "Veb Sayt Sifarişi Verərkən Diqqət Edilməli 5 Məqam",
-        "description": "Doğru web developer-i seçmək üçün bilməli olduğunuz 5 vacib məqam",
+      "planning-website-project": {
+        "title": "Veb Sayt Layihəsinə Başlamazdan Əvvəl Bilinməli 5 Şey",
+        "description": "Uğurlu veb sayt üçün layihənizi düzgün planlaşdırmağın 5 addımı",
         "date": "10 İyun, 2026",
-        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop",
-        "body_title": "Veb Sayt Sifarişi Verərkən Diqqət Edilməli 5 Məqam",
-        "paragraph1": "Veb sayt sifarişi vermək biznesiniz üçün mühüm qərardır. Doğru developer-i seçmək layihənizin uğuru üçün kritik əhəmiyyət daşıyır. Bu yazıda veb sayt sifarişi verərkən diqqət etməli olduğunuz 5 vacib məqamı izah edəcəyik.",
-        "why_title": "Niyə Doğru Seçim Vacibdir?",
-        "why_desc": "Doğru developer seçməyin faydaları:",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=450&fit=crop",
+        "body_title": "Veb Sayt Layihəsinə Başlamazdan Əvvəl Bilinməli 5 Şey",
+        "paragraph1": "Veb sayt qurmaq həyəcanlı bir prosesdir, amma planlaşdırma olmadan başlanan layihələr çox vaxt gözlənilən nəticəni vermir. İstər sadə bir portfolio saytı, istərsə də mürəkkəb bir onlayn platforma olsun — uğurun açarı düzgün planlaşdırmadır.",
+        "why_title": "Planlaşdırma Niyə Vacibdir?",
+        "why_desc": "Yaxşı planlaşdırma layihənizin uğurunu təmin edən əsas amildir:",
         "features": [
-          "Keyfiyyətli nəticə — peşəkar developer gözləntilərinizi qarşılayar",
-          "Vaxta qənaət — təcrübəli developer layihəni daha tez bitirər",
-          "Dəstək və maintaince — saytınızın uzunömürlü olması",
-          "SEO uyğunluğu — saytınız axtarış motorlarında ön sıralarda olar",
-          "Mobil uyğunluq — bütün cihazlarda mükəmməl görüntü"
+          "Aydın məqsədlər — saytınızın nə üçün lazım olduğunu bilmək",
+          "Hədəf kütlə — kimə xidmət etdiyinizi anlamaq",
+          "Funksionallıq — hansı xüsusiyyətlərin vacib olduğunu müəyyən etmək",
+          "Büdcə və vaxt çərçivəsi — real gözləntilərlə irəliləmək",
+          "Gələcək genişlənmə — saytınızın böyüməyə hazır olması"
         ],
-        "start_title": "Nələrə Diqqət Etməli?",
-        "start_desc": "Doğru developer-i seçmək üçün bu məqamları nəzərə alın:",
-        "code": "1. Portfolio — daha öncəki işlərini mütləq nəzərdən keçirin\n2. Texnologiya — hansı texnologiyalardan istifadə etdiyini öyrənin\n3. Referanslar — keçmiş müştəriləri ilə əlaqə saxlayın\n4. Qiymət — ən ucuz yox, ən uyğun qiyməti seçin\n5. Dəstək — layihədən sonra dəstək xidməti varmı?",
+        "start_title": "5 Vacib Məqam",
+        "start_desc": "Layihənizə başlamazdan əvvəl bu sualları özünüzə verin:",
+        "code": "1. Məqsəd: saytınız hansı problemi həll edəcək?\n2. Auditoriya: hədəf müştəriləriniz kimdir?\n3. Məzmun: hansı məlumatları təqdim edəcəksiniz?\n4. Funksiyalar: hansı texniki xüsusiyyətlər lazımdır?\n5. Büdcə: nə qədər investisiya qoymağa hazırsınız?",
         "conclusion_title": "Nəticə",
-        "conclusion_desc": "Doğru developer seçimi layihənizin uğurunu təmin edən ən vacib amildir. Portfolio, texnologiya bilgisi, referanslar və dəstək xidmətini nəzərə alaraq qərar verin. Unutmayın: ucuz qiymət çox vaxt keyfiyyətsiz iş deməkdir."
+        "conclusion_desc": "Uğurlu veb saytın əsası yaxşı planlaşdırmadır. Məqsədlərinizi, auditoriyanızı və tələblərinizi dəqiq müəyyən etmək layihənizin həm vaxtında, həm də büdcə daxilində tamamlanmasını təmin edər. Unutmayın: yaxşı plan — uğurlu saytın yarısıdır!"
       },
       "successful-website-features": {
         "title": "Uğurlu Veb Saytın 5 Əsas Xüsusiyyəti",
