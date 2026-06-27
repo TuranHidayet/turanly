@@ -2,7 +2,7 @@ import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/l
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-const allSlugs = ["git-beginners-guide", "clean-code-principles", "web-development-guide"];
+const allSlugs = ["why-need-website", "choose-right-developer", "successful-website-features"];
 
 export async function generateStaticParams() {
   return locales.flatMap((lang) =>

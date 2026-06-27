@@ -41,72 +41,71 @@
     "back": "Geri",
     "view_all": "Bütün Yazılara Bax",
     "posts": {
-      "git-beginners-guide": {
-        "title": "Git ilə Versiya İdarəetmə: Başlanğıc Bələdçisi",
-        "description": "Git və versiya idarəetmə sistemlərinin əsaslarını öyrənin",
+      "why-need-website": {
+        "title": "Biznesinizin Peşəkar Veb Sayta Niyə Ehtiyacı Var?",
+        "description": "Rəqəmsal dövrdə peşəkar veb sayt niyə biznesiniz üçün vacibdir?",
         "date": "15 İyun, 2026",
-        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=450&fit=crop",
-        "body_title": "Git ilə Versiya İdarəetmə: Başlanğıc Bələdçisi",
-        "paragraph1": "Versiya idarəetmə sistemi (VCS) proqram təminatının inkişafında ən vacib alətlərdən biridir. Git bu gün ən populyar VCS-dir və hər bir developer tərəfindən bilinməlidir. Bu yazıda Git-in əsas anlayışlarını və iş axınını izah edəcəyik.",
-        "why_title": "Niyə Git Vacibdir?",
-        "why_desc": "Git istifadə etməyin əsas üstünlükləri:",
+        "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=450&fit=crop",
+        "body_title": "Biznesinizin Peşəkar Veb Sayta Niyə Ehtiyacı Var?",
+        "paragraph1": "Rəqəmsal dövrümüzdə potensial müştərilərinizin ilk olaraq sizi internetdə axtardığını bilirdinizmi? Araşdırmalar göstərir ki, istifadəçilərin 75%-i bir şirkət haqqında qərar verməzdən öncə onun veb saytını ziyarət edir. Peşəkar veb sayt artıq lüks deyil, zərurətdir.",
+        "why_title": "Veb Saytınız Olmazsa Nə İtirirsiniz?",
+        "why_desc": "Peşəkar veb sayta sahib olmağın əsas üstünlükləri:",
         "features": [
-          "Versiya tarixçəsi — kodun hər dəyişikliyini izləmək imkanı",
-          "Branching — paralel inkişaf xətləri yaratmaq",
-          "Collaboration — komanda üzvləri ilə asan əməkdaşlıq",
-          "Backup — kodun bütün versiyalarının qorunması",
-          "Merge — dəyişiklikləri birləşdirmək və konfliktləri həll etmək"
+          "24/7 fəaliyyət — iş saatları xaricində də müştərilər sizi tapsın",
+          "Güvən və etibarlılıq — peşəkar sayt biznesinizin ciddiliyini göstərir",
+          "Rəqabət üstünlüyü — rəqiblərinizdən bir addım öndə olun",
+          "Marketinq mərkəzi — bütün kampaniyalarınız üçün tək mənbə",
+          "Müştəri məlumatları — ziyarətçilərin davranışlarını analiz edin"
         ],
-        "start_title": "Əsas Əmrlər",
-        "start_desc": "Git ilə işləmək üçün ən vacib əmrlər:",
-        "code": "# Yeni repository yaratmaq\ngit init\n\n# Dəyişiklikləri əlavə etmək\ngit add .\ngit commit -m \"İlk commit\"\n\n# Branch yaratmaq və keçmək\ngit branch feature-login\ngit checkout feature-login\n\n# Dəyişiklikləri birləşdirmək\ngit merge feature-login\n\n# Remote repository-yə push etmək\ngit push origin main",
-        "conclusion_title": "Nəticə",
-        "conclusion_desc": "Git müasir proqramlaşdırmanın ayrılmaz bir hissəsidir. Əsas əmrləri öyrənmək və gündəlik iş axınınıza inteqrasiya etmək developer karyeranızda mühüm addımdır."
+        "start_title": "Peşəkar Veb Sayt Nə Verir?",
+        "start_desc": "Yaxşı hazırlanmış veb sayt biznesinizə aşağıdakı imkanları yaradır:",
+        "code": "Peşəkar veb sayt = 24/7 satış maşını\n• Müştərilər sizi gecə-gündüz tapa bilər\n• Portfolionuzu nümayiş etdirə bilərsiniz\n• Müştəri rəylərini və uğur hekayələrini paylaşa bilərsiniz\n• Əlaqə məlumatlarınız hər zaman əlçatandır\n• Google-da tapılmaq imkanınız artır",
+        "conclusion_title": "Bugün Başlayın",
+        "conclusion_desc": "İnternetsiz biznes bu gün görünməzdir. Peşəkar veb saytınız olmasa, potensial müştəriləriniz sizi tapa bilməz və rəqiblərinizə yönələr. İndi hərəkətə keçin və biznesinizi rəqəmsal dünyada tanıdın!"
       },
-      "clean-code-principles": {
-        "title": "Təmiz Kod Yazma Prinsipləri",
-        "description": "Oxunaqlı və davamlı kod yazmağın əsas prinsipləri haqqında",
+      "choose-right-developer": {
+        "title": "Veb Sayt Sifarişi Verərkən Diqqət Edilməli 5 Məqam",
+        "description": "Doğru web developer-i seçmək üçün bilməli olduğunuz 5 vacib məqam",
         "date": "10 İyun, 2026",
-        "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=450&fit=crop",
-        "body_title": "Təmiz Kod Yazma Prinsipləri",
-        "paragraph1": "Təmiz kod yazmaq təcrübəli proqramçıları başlanğıclardan ayıran ən vacib bacarıqlardan biridir. Bu yazıda təmiz kod yazmağın əsas prinsiplərini və onları layihələrinizdə necə tətbiq edəcəyinizi öyrənəcəksiniz.",
-        "why_title": "Niyə Təmiz Kod Vacibdir?",
-        "why_desc": "Təmiz kod yazmağın faydaları:",
+        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop",
+        "body_title": "Veb Sayt Sifarişi Verərkən Diqqət Edilməli 5 Məqam",
+        "paragraph1": "Veb sayt sifarişi vermək biznesiniz üçün mühüm qərardır. Doğru developer-i seçmək layihənizin uğuru üçün kritik əhəmiyyət daşıyır. Bu yazıda veb sayt sifarişi verərkən diqqət etməli olduğunuz 5 vacib məqamı izah edəcəyik.",
+        "why_title": "Niyə Doğru Seçim Vacibdir?",
+        "why_desc": "Doğru developer seçməyin faydaları:",
         "features": [
-          "Oxunaqlılıq — kod digər developerlər tərəfindən asan başa düşülür",
-          "Davamlılıq — dəyişikliklər etmək və yeni xüsusiyyətlər əlavə etmək asanlaşır",
-          "Debugging — səhvləri tapmaq və düzəltmək daha sürətli olur",
-          "Teamwork — komanda üzvləri arasında daha yaxşı əməkdaşlıq",
-          "Test yazma — test edilə bilən kod yazmaq asanlaşır"
+          "Keyfiyyətli nəticə — peşəkar developer gözləntilərinizi qarşılayar",
+          "Vaxta qənaət — təcrübəli developer layihəni daha tez bitirər",
+          "Dəstək və maintaince — saytınızın uzunömürlü olması",
+          "SEO uyğunluğu — saytınız axtarış motorlarında ön sıralarda olar",
+          "Mobil uyğunluq — bütün cihazlarda mükəmməl görüntü"
         ],
-        "start_title": "Əsas Prinsiplər",
-        "start_desc": "Təmiz kod yazmaq üçün bəzi vacib prinsiplər:",
-        "code": "// PIS adlandırma — nə etdiyi aydın olan adlar seçin\n// Pis: function d(a, b) { return a - b; }\n// Yaxsi: function calculateRemaining(budget, spent) { return budget - spent; }\n\n// DRY — təkrarlanan kodu funksiyalara çıxarın\n// KISS — sadə saxlayın, mürəkkəbləşdirməyin\n// Single Responsibility — hər funksiya tək bir iş görsün",
+        "start_title": "Nələrə Diqqət Etməli?",
+        "start_desc": "Doğru developer-i seçmək üçün bu məqamları nəzərə alın:",
+        "code": "1. Portfolio — daha öncəki işlərini mütləq nəzərdən keçirin\n2. Texnologiya — hansı texnologiyalardan istifadə etdiyini öyrənin\n3. Referanslar — keçmiş müştəriləri ilə əlaqə saxlayın\n4. Qiymət — ən ucuz yox, ən uyğun qiyməti seçin\n5. Dəstək — layihədən sonra dəstək xidməti varmı?",
         "conclusion_title": "Nəticə",
-        "conclusion_desc": "Təmiz kod yazmaq vaxt aparan bir bacarıqdır, ancaq uzun müddətdə böyük fayda verir. Oxunaqlı, sadə və davamlı kod yazmaq peşəkar developer olmağın ən vacib addımlarından biridir."
+        "conclusion_desc": "Doğru developer seçimi layihənizin uğurunu təmin edən ən vacib amildir. Portfolio, texnologiya bilgisi, referanslar və dəstək xidmətini nəzərə alaraq qərar verin. Unutmayın: ucuz qiymət çox vaxt keyfiyyətsiz iş deməkdir."
       },
-      "web-development-guide": {
-        "title": "Web Developmentə Başlamaq Bələdçisi",
-        "description": "2026-cı ildə web development dünyasına ilk addımı atmaq üçün bələdçi",
+      "successful-website-features": {
+        "title": "Uğurlu Veb Saytın 5 Əsas Xüsusiyyəti",
+        "description": "Müştəriləri cəlb edən və satışları artıran veb saytın sirləri",
         "date": "5 İyun, 2026",
-        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=450&fit=crop",
-        "body_title": "Web Developmentə Başlamaq Bələdçisi",
-        "paragraph1": "Web development bu günün ən populyar və gəlirli peşələrindən biridir. Bu yazıda web development dünyasına necə başlamağı, hansı texnologiyaları öyrənməyi və ilk addımları necə atmağı izah edəcəyik.",
-        "why_title": "Hansı Texnologiyaları Öyrənməli?",
-        "why_desc": "Web developmentə başlamaq üçün əsaddan mənimsəməli olduğunuz texnologiyalar:",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop",
+        "body_title": "Uğurlu Veb Saytın 5 Əsas Xüsusiyyəti",
+        "paragraph1": "Uğurlu veb sayt yalnız gözəl görünməməli, həm də ziyarətçiləri müştəriyə çevirməlidir. Bu yazıda hər bir peşəkar veb saytda olması gereken 5 əsas xüsusiyyəti izah edəcəyik ki, saytınız maksimum nəticə versin.",
+        "why_title": "Bu Xüsusiyyətlər Niyə Vacibdir?",
+        "why_desc": "Uğurlu veb saytın 5 əsas xüsusiyyəti:",
         "features": [
-          "HTML & CSS — web səhifələrinin struktur və görünüşü",
-          "JavaScript — interaktivlik və dinamik funksionallıq",
-          "Frontend Framework (React, Vue) — istifadəçi interfeysi qurmaq",
-          "Backend (Node.js, PHP, Python) — server tərəfli proqramlaşdırma",
-          "Database (MySQL, PostgreSQL) — məlumat saxlama və idarəetmə",
-          "Version Control (Git) — kodun versiyalarını idarə etmək"
+          "Sürətli yüklənmə — istifadəçilərin 53%-i 3 saniyədən gec açılan saytı tərk edir",
+          "Mobil uyğunluq — trafikin 60%-i mobil cihazlardan gəlir",
+          "İstifadəçi dostu dizayn — intuitiv naviqasiya və aydın strukturu",
+          "SEO optimizasiyası — Google-da üst sıralarda yer almaq üçün",
+          "Güclü Call-to-Action — ziyarətçiləri hərəkətə keçirən düymələr"
         ],
-        "start_title": "İlk Addımlar",
-        "start_desc": "Web developmentə başlamaq üçün addım-addım plan:",
-        "code": "// 1. HTML və CSS ilə başlayın\n// 2. JavaScript əsaslarını öyrənin\n// 3. Kiçik layihələr hazırlayın (kalkulyator, todo list)\n// 4. Git və GitHub ilə tanış olun\n// 5. Frontend framework seçin və dərinləşin\n// 6. Backend texnologiyası seçin\n// 7. Full-stack layihə hazırlayın",
+        "start_title": "Necə Tətbiq Etməli?",
+        "start_desc": "Bu xüsusiyyətləri saytınızda tətbiq etmək üçün:",
+        "code": "✓ Sürət: şəkilləri optimallaşdırın, lazımsız plugin-ləri silin\n✓ Mobil: responsive dizayn istifadə edin\n✓ Dizayn: sadə və təmiz interfeys yaradın\n✓ SEO: açar sözləri düzgün seçin və meta təsvirlər yazın\n✓ CTA: hər səhifədə ən az bir hərəkətə çağırış olsun",
         "conclusion_title": "Nəticə",
-        "conclusion_desc": "Web development maraqlı və dinamik bir sahədir. Başlanğıcda çox məlumat olsa da, addım-addım irəliləsəniz və daim təcrübə etsəniz, qısa müddətdə yaxşı nəticələr əldə edə bilərsiniz. Unutmayın: ən yaxşı öyrənmə üsulu yazmaqdır!"
+        "conclusion_desc": "Uğurlu veb sayt yalnız gözəl dizayn deyil, həm də funksional və istifadəçi dostu olmalıdır. Sürət, mobil uyğunluq, SEO və güclü CTA ilə saytınızı ziyarətçilər üçün cəlb edici edin. Peşəkar veb sayt investisiyanızın qarşılığını qat-qat artırır!"
       }
     }
   },
