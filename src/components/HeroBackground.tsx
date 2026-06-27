@@ -1,13 +1,31 @@
 "use client";
 
-const particles = Array.from({ length: 60 }, (_, i) => ({
+const stars = Array.from({ length: 120 }, (_, i) => ({
   id: i,
-  size: 1 + Math.random() * 3,
+  size: 1 + Math.random() * 4,
   left: Math.random() * 100,
   top: Math.random() * 100,
-  duration: 3 + Math.random() * 5,
-  delay: Math.random() * 10,
-  opacity: 0.3 + Math.random() * 0.7,
+  duration: 2 + Math.random() * 4,
+  delay: Math.random() * 8,
+  opacity: 0.5 + Math.random() * 0.5,
+}));
+
+const codeDrifts = [
+  "const", "function", "return", "import", "export",
+  "class", "await", "async", "fetch", "Route",
+  "public", "private", "static", "throw", "catch",
+  "const x =", "fn()", "<div>", "{}", "[]",
+  "=>", "git", "npm i", "php", "sql", "api",
+];
+
+const driftingCode = Array.from({ length: 15 }, (_, i) => ({
+  id: i,
+  text: codeDrifts[i % codeDrifts.length],
+  top: Math.random() * 100,
+  delay: Math.random() * 20,
+  duration: 12 + Math.random() * 16,
+  fromRight: Math.random() > 0.5,
+  opacity: 0.2 + Math.random() * 0.25,
 }));
 
 const techWords = [
@@ -15,18 +33,18 @@ const techWords = [
   "Git", "npm", "web", ".py", ".js", "[]", "{}", "=>", "</>"
 ];
 
-const shootingStars = Array.from({ length: 3 }, (_, i) => ({
+const shootingStars = Array.from({ length: 4 }, (_, i) => ({
   id: i,
-  top: Math.random() * 50,
-  delay: 5 + Math.random() * 15,
+  top: 5 + Math.random() * 50,
+  delay: 3 + Math.random() * 12,
 }));
 
-const orbitItems = Array.from({ length: 6 }, (_, i) => ({
+const orbitItems = Array.from({ length: 8 }, (_, i) => ({
   id: i,
-  size: 2 + Math.random() * 4,
-  duration: 15 + Math.random() * 20,
-  delay: Math.random() * 15,
-  opacity: 0.2 + Math.random() * 0.3,
+  size: 2 + Math.random() * 5,
+  duration: 12 + Math.random() * 18,
+  delay: Math.random() * 12,
+  opacity: 0.3 + Math.random() * 0.4,
 }));
 
 export function HeroBackground() {
@@ -35,44 +53,71 @@ export function HeroBackground() {
       <style>{`
         @keyframes hb-twinkle {
           0%, 100% { opacity: 0.2; transform: scale(0.8); }
-          50% { opacity: 1; transform: scale(1.2); }
+          50% { opacity: 1; transform: scale(1.3); }
         }
         @keyframes hb-shoot {
           0% { transform: translateX(0) translateY(0); opacity: 1; }
           70% { opacity: 1; }
-          100% { transform: translateX(-500px) translateY(500px); opacity: 0; }
+          100% { transform: translateX(-600px) translateY(600px); opacity: 0; }
         }
         @keyframes hb-float {
           0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-30px); }
+          50% { transform: translateY(-25px); }
         }
         @keyframes hb-orbit {
           0% { transform: rotate(0deg) translateX(180px) rotate(0deg); }
           100% { transform: rotate(360deg) translateX(180px) rotate(-360deg); }
         }
+        @keyframes hb-drift-right {
+          0% { transform: translateX(-120vw) translateY(0); opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { transform: translateX(120vw) translateY(-20px); opacity: 0; }
+        }
+        @keyframes hb-drift-left {
+          0% { transform: translateX(120vw) translateY(0); opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { transform: translateX(-120vw) translateY(20px); opacity: 0; }
+        }
       `}</style>
       <div className="pointer-events-none absolute inset-0 -z-10 select-none overflow-hidden">
         {/* Stars */}
-        {particles.map((p) => (
+        {stars.map((s) => (
           <div
-            key={p.id}
+            key={s.id}
             className="absolute rounded-full bg-primary"
             style={{
-              width: p.size,
-              height: p.size,
-              left: `${p.left}%`,
-              top: `${p.top}%`,
-              opacity: p.opacity,
-              animation: `hb-twinkle ${p.duration}s ${p.delay}s infinite`,
+              width: s.size,
+              height: s.size,
+              left: `${s.left}%`,
+              top: `${s.top}%`,
+              opacity: s.opacity,
+              animation: `hb-twinkle ${s.duration}s ${s.delay}s infinite`,
             }}
           />
+        ))}
+
+        {/* Drifting code lines */}
+        {driftingCode.map((d) => (
+          <span
+            key={d.id}
+            className="absolute font-mono text-xs font-semibold text-primary/30 dark:text-primary/40"
+            style={{
+              top: `${d.top}%`,
+              animation: `${d.fromRight ? "hb-drift-left" : "hb-drift-right"} ${d.duration}s ${d.delay}s infinite linear`,
+              opacity: d.opacity,
+            }}
+          >
+            {d.text}
+          </span>
         ))}
 
         {/* Shooting stars */}
         {shootingStars.map((s) => (
           <div
             key={s.id}
-            className="absolute h-px w-24 bg-gradient-to-l from-primary/80 to-transparent"
+            className="absolute h-px w-28 bg-gradient-to-l from-primary/90 to-transparent"
             style={{
               right: 0,
               top: `${s.top}%`,
@@ -85,11 +130,11 @@ export function HeroBackground() {
         {techWords.map((word, i) => (
           <span
             key={i}
-            className="absolute font-mono text-xs font-bold text-primary/20 dark:text-primary/25"
+            className="absolute font-mono text-sm font-bold text-accent/30 dark:text-accent/40"
             style={{
               left: `${Math.random() * 90 + 5}%`,
               top: `${Math.random() * 90 + 5}%`,
-              animation: `hb-float ${8 + Math.random() * 12}s ${Math.random() * 10}s infinite ease-in-out`,
+              animation: `hb-float ${6 + Math.random() * 10}s ${Math.random() * 8}s infinite ease-in-out`,
             }}
           >
             {word}
