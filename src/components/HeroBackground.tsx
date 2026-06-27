@@ -10,7 +10,7 @@ const stars = Array.from({ length: 120 }, (_, i) => ({
   opacity: 0.5 + Math.random() * 0.5,
 }));
 
-const codeDrifts = [
+const codeSnippets = [
   "const", "function", "return", "import", "export",
   "class", "await", "async", "fetch", "Route",
   "public", "private", "static", "throw", "catch",
@@ -18,14 +18,15 @@ const codeDrifts = [
   "=>", "git", "npm i", "php", "sql", "api",
 ];
 
-const driftingCode = Array.from({ length: 15 }, (_, i) => ({
+const driftingCode = Array.from({ length: 20 }, (_, i) => ({
   id: i,
-  text: codeDrifts[i % codeDrifts.length],
-  top: Math.random() * 100,
+  text: codeSnippets[i % codeSnippets.length],
+  top: 5 + Math.random() * 90,
   delay: Math.random() * 20,
   duration: 12 + Math.random() * 16,
   fromRight: Math.random() > 0.5,
-  opacity: 0.2 + Math.random() * 0.25,
+  opacity: 0.25 + Math.random() * 0.25,
+  over: i < 8,
 }));
 
 const techWords = [
@@ -48,6 +49,9 @@ const orbitItems = Array.from({ length: 8 }, (_, i) => ({
 }));
 
 export function HeroBackground() {
+  const overCodes = driftingCode.filter((d) => d.over);
+  const underCodes = driftingCode.filter((d) => !d.over);
+
   return (
     <>
       <style>{`
@@ -80,7 +84,31 @@ export function HeroBackground() {
           90% { opacity: 1; }
           100% { transform: translateX(-120vw) translateY(20px); opacity: 0; }
         }
+        @keyframes hb-over-right {
+          0% { transform: translateX(-120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
+          10% { opacity: 0.7; }
+          30% { color: rgba(37,99,235,0.3); }
+          40% { color: #ef4444; transform: translateX(-10vw) translateY(-4px); }
+          50% { color: #ef4444; transform: translateX(0) translateY(0); }
+          60% { color: #ef4444; transform: translateX(10vw) translateY(4px); }
+          70% { color: rgba(37,99,235,0.3); }
+          90% { opacity: 0.7; }
+          100% { transform: translateX(120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
+        }
+        @keyframes hb-over-left {
+          0% { transform: translateX(120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
+          10% { opacity: 0.7; }
+          30% { color: rgba(37,99,235,0.3); }
+          40% { color: #ef4444; transform: translateX(10vw) translateY(-4px); }
+          50% { color: #ef4444; transform: translateX(0) translateY(0); }
+          60% { color: #ef4444; transform: translateX(-10vw) translateY(4px); }
+          70% { color: rgba(37,99,235,0.3); }
+          90% { opacity: 0.7; }
+          100% { transform: translateX(-120vw) translateY(0); color: rgba(37,99,235,0.3); opacity: 0; }
+        }
       `}</style>
+
+      {/* BACKGROUND LAYER - behind everything */}
       <div className="pointer-events-none absolute inset-0 -z-10 select-none overflow-hidden">
         {/* Stars */}
         {stars.map((s) => (
@@ -98,8 +126,8 @@ export function HeroBackground() {
           />
         ))}
 
-        {/* Drifting code lines */}
-        {driftingCode.map((d) => (
+        {/* Under text - drifting code behind */}
+        {underCodes.map((d) => (
           <span
             key={d.id}
             className="absolute font-mono text-xs font-semibold text-primary/30 dark:text-primary/40"
@@ -162,6 +190,22 @@ export function HeroBackground() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* OVERLAY LAYER - passes over the hero text */}
+      <div className="pointer-events-none absolute inset-0 z-20 select-none overflow-hidden">
+        {overCodes.map((d) => (
+          <span
+            key={d.id}
+            className="absolute font-mono text-xs font-semibold"
+            style={{
+              top: `${d.top}%`,
+              animation: `${d.fromRight ? "hb-over-left" : "hb-over-right"} ${d.duration}s ${d.delay}s infinite linear`,
+            }}
+          >
+            {d.text}
+          </span>
+        ))}
       </div>
     </>
   );
