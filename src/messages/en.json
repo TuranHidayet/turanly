@@ -151,6 +151,25 @@
           "Multi-language and multi-currency support",
           "SEO-optimized product pages"
         ]
+      },
+      "data-analytics": {
+        "title": "Data Analytics",
+        "description": "Data collection, visualization, custom dashboards, and business intelligence solutions.",
+        "intro": "Understand your data and make smarter decisions. Build your business intelligence with custom dashboards, interactive visualizations, and deep analytics.",
+        "types": {
+          "dashboard": "Dashboards — real-time monitoring of your business metrics with custom panels.",
+          "visualization": "Data visualization — transform complex data into clear charts and tables.",
+          "tracking": "Tracking & analytics — monitor user behavior on websites and applications.",
+          "bi": "Business Intelligence — deep analysis of sales, marketing, and operations data."
+        },
+        "features": [
+          "Custom dashboards and reports",
+          "Real-time data monitoring",
+          "Google Analytics 4 + Tag Manager",
+          "Data integration (API, CSV, DB)",
+          "Interactive charts and graphs",
+          "Monthly business analysis report"
+        ]
       }
     }
   },

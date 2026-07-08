@@ -151,6 +151,25 @@
           "Çoxdilli və çoxvalyuta dəstəyi",
           "SEO optimallaşdırılmış məhsul səhifələri"
         ]
+      },
+      "data-analytics": {
+        "title": "Data Analitika",
+        "description": "Məlumatların toplanması, vizuallaşdırılması, hesabat panelləri və biznes kəşfiyyatı həlləri.",
+        "intro": "Məlumatlarınızı anlayın və daha ağıllı qərarlar verin. Xüsusi hesabat panelləri, interaktiv vizuallaşdırmalar və dərin analiz ilə biznesinizin rəqəmsal kəşfiyyatını qurun.",
+        "types": {
+          "dashboard": "Hesabat panelləri — biznes metrikalarınızı real-time izləmək üçün fərdi dashboard-lar.",
+          "visualization": "Məlumat vizuallaşdırması — mürəkkəb məlumatları anlaşıqlı qrafik və cədvəllərə çevirin.",
+          "tracking": "Tracking və analitika — veb sayt və tətbiqlərdə istifadəçi davranışlarının izlənməsi.",
+          "bi": "Business Intelligence — satış, marketinq və əməliyyat məlumatlarının dərin analizi."
+        },
+        "features": [
+          "Fərdi dashboard və hesabatlar",
+          "Real-time məlumat monitorinqi",
+          "Google Analytics 4 + Tag Manager",
+          "Məlumat inteqrasiyası (API, CSV, DB)",
+          "İnteraktiv qrafik və diaqramlar",
+          "Aylıq biznes analiz hesabatı"
+        ]
       }
     }
   },
