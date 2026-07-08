@@ -40,27 +40,117 @@
     "items": {
       "websites": {
         "title": "Veb Saytlar",
-        "description": "Korporativ saytlar, portfolio saytları, landing page-lər və vizit kartı saytları. Müasir dizayn və mobil uyğunluq ilə."
+        "description": "Korporativ saytlar, portfolio saytları, landing page-lər və vizit kartı saytları. Müasir dizayn və mobil uyğunluq ilə.",
+        "intro": "Peşəkar veb sayt biznesinizin rəqəmsal üzüdür. Potensial müştərilərin sizi tapması, tanıması və etibar etməsi üçün ilk addımdır. Müasir, sürətli və istifadəçi dostu veb sayt ilə rəqiblərinizdən bir addım öndə olun.",
+        "types": {
+          "corporate": "Korporativ saytlar — şirkətinizi, dəyərlərinizi və xidmətlərinizi peşəkar şəkildə təqdim edin.",
+          "portfolio": "Portfolio saytları — işlərinizi nümayiş etdirin və yeni müştərilər cəlb edin.",
+          "landing": "Landing page — xüsusi kampaniyalar və məhsul təqdimatları üçün hədəflənmiş səhifələr.",
+          "blog": "Bloq saytları — məzmun marketinqi ilə auditoriyanızı böyüdün və mövqenizi gücləndirin."
+        },
+        "features": [
+          "Tam mobil uyğunluq (responsive design)",
+          "Sürətli yüklənmə (optimized performance)",
+          "SEO dostu struktur",
+          "İstifadəçi dostu interfeys",
+          "Sosial media inteqrasiyası",
+          "Google Analytics və Search Console quraşdırması"
+        ]
       },
       "applications": {
         "title": "Veb Tətbiqlər",
-        "description": "Admin panellər, CRM sistemləri, sifariş idarəetmə sistemləri və fərdi web tətbiqlər."
+        "description": "Admin panellər, CRM sistemləri, sifariş idarəetmə sistemləri və fərdi web tətbiqlər.",
+        "intro": "İş proseslərinizi rəqəmsallaşdırmaq və səmərəliliyi artırmaq üçün xüsusi hazırlanmış veb tətbiqlər. Tamamilə sizin ehtiyaclarınıza uyğun olaraq inkişaf etdirilir.",
+        "types": {
+          "admin": "Admin panellər — biznesinizi idarə etmək üçün güclü və intuitiv idarəetmə panelləri.",
+          "crm": "CRM sistemləri — müştəri əlaqələrini izləyin, satış processlərini avtomatlaşdırın.",
+          "order": "Sifariş idarəetmə sistemləri — sifarişləri qəbul edin, izləyin və çatdırılmanı idarə edin.",
+          "platforms": "Təhsil və platforma həlləri — onlayn kurslar, daxili sistemlər və daha çoxu."
+        },
+        "features": [
+          "Rol əsaslı giriş və icazə sistemi",
+          "Real-time məlumat yeniləmələri",
+          "Məlumat təhlükəsizliyi və şifrələmə",
+          "Genişlənmə imkanı (scalable architecture)",
+          "Üçüncü tərəf API inteqrasiyası",
+          "Məlumat hesabatları və analitika"
+        ]
       },
       "design": {
         "title": "UI/UX Dizayn",
-        "description": "İstifadəçi dostu interfeys dizaynı, responsive layout, wireframe və prototip hazırlığı."
+        "description": "İstifadəçi dostu interfeys dizaynı, responsive layout, wireframe və prototip hazırlığı.",
+        "intro": "Gözəl görünən və istifadəsi asan olan interfeyslər istifadəçilərinizi məmnun edər və onları müştəriyə çevirər. Müasir dizayn trendləri ilə biznesinizi fərqləndirin.",
+        "types": {
+          "web": "Veb dizayn — veb sayt və tətbiqlər üçün müasir və funksional interfeys dizaynı.",
+          "app": "Mobil tətbiq dizaynı — iOS və Android platformaları üçün optimallaşdırılmış istifadəçi təcrübəsi.",
+          "prototype": "Wireframe və prototiplər — layihənizin strukturunu və axınını əvvəlcədən vizuallaşdırın.",
+          "brand": "Vizual identiklik — rəng palitrası, tipoqrafiya və dizayn sistemi ilə tanınan brend yaradın."
+        },
+        "features": [
+          "İstifadəçi araşdırması və persona yaradılması",
+          "Responsive və adaptive dizayn",
+          "Əlçatanlıq standartları (WCAG)",
+          "Sürətli prototipləmə (Figma)",
+          "Dizayn sistemi və komponent kitabxanası",
+          "A/B test və istifadəçi testi"
+        ]
       },
       "support": {
         "title": "Texniki Dəstək",
-        "description": "Mövcud saytların texniki dəstəyi, bug fix, yeniləmələr, hosting və domain idarəetməsi."
+        "description": "Mövcud saytların texniki dəstəyi, bug fix, yeniləmələr, hosting və domain idarəetməsi.",
+        "intro": "Veb layihənizin problemsiz işləməsi üçün etibarlı texniki dəstək. Təhlükəsizlik, performans və yeniliklər bizim işimizdir — siz işinizə fokuslanın.",
+        "types": {
+          "maintenance": "Texniki baxım — mütəmadi yeniləmələr, təhlükəsizlik yamaları və performans optimizasiyası.",
+          "bugs": "Bug fix — saytınızdakı xətaların aşkarlanması və qısa zamanda düzəldilməsi.",
+          "hosting": "Hosting idarəetməsi — server konfiqurasiyası, SSL sertifikatı və domain idarəetməsi.",
+          "optimization": "Performans optimizasiyası — yüklənmə sürətinin artırılması və resurs optimallaşdırması."
+        },
+        "features": [
+          "Müntəzəm backup və bərpa planı",
+          "Təhlükəsizlik auditi və monitorinq",
+          "Sürətli reaksiya müddəti (SLA)",
+          "CMS yeniləmələri və plugin idarəetməsi",
+          "Server və hosting optimizasiyası",
+          "Prioritet dəstək xətti"
+        ]
       },
       "seo": {
         "title": "SEO Optimizasiyası",
-        "description": "On-page SEO, texniki SEO audit, performans optimizasiyası, Google Analytics və Search Console quraşdırılması."
+        "description": "On-page SEO, texniki SEO audit, performans optimizasiyası, Google Analytics və Search Console quraşdırılması.",
+        "intro": "Axtarış motorlarında üst sıralara çıxmaq və hədəf auditoriyanıza çatmaq üçün data əsaslı SEO strategiyası. Organik trafikinizi artırın və biznesinizi böyüdün.",
+        "types": {
+          "onpage": "On-page SEO — daxil optimallaşdırma ilə səhifələrinizin axtarış motorları üçün uyğunlaşdırılması.",
+          "technical": "Texniki SEO audit — sayt strukturunun, indeksləmənin və sürətin dərin analizi.",
+          "content": "Kontent strategiyası — hədəf açar sözlər ətrafında dəyərli məzmun yaradılması.",
+          "local": "Yerli SEO — Google My Business optimizasiyası və lokal axtarışlarda görünürlük."
+        },
+        "features": [
+          "Açar söz araşdırması və rəqib analizi",
+          "Texniki SEO audit və hesabat",
+          "Performans və Core Web Vitals optimizasiyası",
+          "Google Analytics 4 + Search Console quraşdırması",
+          "Aylıq performans hesabatı",
+          "Backlink və off-page SEO strategiyası"
+        ]
       },
       "ecommerce": {
         "title": "E-commerce Həlləri",
-        "description": "Onlayn mağazalar, ödəniş sistem inteqrasiyası, məhsul idarəetməsi və sifariş izləmə."
+        "description": "Onlayn mağazalar, ödəniş sistem inteqrasiyası, məhsul idarəetməsi və sifariş izləmə.",
+        "intro": "Məhsul və xidmətlərinizi onlayn satışa çıxarın. Tam funksional, təhlükəsiz və istifadəsi asan e-commerce platforması ilə satışlarınızı artırın.",
+        "types": {
+          "store": "Onlayn mağazalar — fiziki və rəqəmsal məhsullar üçün tam funksional satış platforması.",
+          "payment": "Ödəniş sistemi inteqrasiyası — yerli və beynəlxalq ödəniş sistemləri ilə rahat ödəniş.",
+          "subscription": "Abunə əsaslı satış — müntəzəm ödəniş modelləri üçün abunə sistemi.",
+          "b2b": "B2B satış platforması — topdan satış, qiymət siyahıları və korporativ sifariş idarəetməsi."
+        },
+        "features": [
+          "Çoxlu ödəniş gateway dəstəyi",
+          "Məhsul kataloqu və inventar idarəetməsi",
+          "Sifariş izləmə və status yeniləmələri",
+          "Çatdırılma və logistika inteqrasiyası",
+          "Çoxdilli və çoxvalyuta dəstəyi",
+          "SEO optimallaşdırılmış məhsul səhifələri"
+        ]
       }
     }
   },

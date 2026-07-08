@@ -1,5 +1,6 @@
 import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { ServiceCard } from "@/components/ServiceCard";
 
 export async function generateStaticParams() {
@@ -72,12 +73,13 @@ export default async function ServicesPage({
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {Object.entries(dict.services.items).map(([key, service]: [string, any]) => (
-              <ServiceCard
-                key={key}
-                title={service.title}
-                description={service.description}
-                icon={icons[key]}
-              />
+              <Link key={key} href={`/${lang}/services/${key}`}>
+                <ServiceCard
+                  title={service.title}
+                  description={service.description}
+                  icon={icons[key]}
+                />
+              </Link>
             ))}
           </div>
         </div>

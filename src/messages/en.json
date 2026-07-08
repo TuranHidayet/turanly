@@ -40,27 +40,117 @@
     "items": {
       "websites": {
         "title": "Websites",
-        "description": "Corporate websites, portfolio sites, landing pages, and business card sites. Modern design with mobile responsiveness."
+        "description": "Corporate websites, portfolio sites, landing pages, and business card sites. Modern design with mobile responsiveness.",
+        "intro": "A professional website is the digital face of your business. It's the first step for potential customers to find, know, and trust you. Stay ahead of competitors with a modern, fast, and user-friendly website.",
+        "types": {
+          "corporate": "Corporate websites — present your company, values, and services in a professional manner.",
+          "portfolio": "Portfolio sites — showcase your work and attract new clients.",
+          "landing": "Landing pages — targeted pages for specific campaigns and product launches.",
+          "blog": "Blog sites — grow your audience with content marketing and strengthen your position."
+        },
+        "features": [
+          "Full mobile responsiveness",
+          "Fast loading (optimized performance)",
+          "SEO-friendly structure",
+          "User-friendly interface",
+          "Social media integration",
+          "Google Analytics & Search Console setup"
+        ]
       },
       "applications": {
         "title": "Web Applications",
-        "description": "Admin panels, CRM systems, order management systems, and custom web applications tailored to your needs."
+        "description": "Admin panels, CRM systems, order management systems, and custom web applications tailored to your needs.",
+        "intro": "Custom-built web applications to digitize your workflows and boost efficiency. Developed entirely around your specific business needs.",
+        "types": {
+          "admin": "Admin panels — powerful and intuitive dashboards to manage your business.",
+          "crm": "CRM systems — track customer relationships and automate sales processes.",
+          "order": "Order management systems — receive, track, and manage deliveries.",
+          "platforms": "Education & platform solutions — online courses, internal systems, and more."
+        },
+        "features": [
+          "Role-based access and permissions",
+          "Real-time data updates",
+          "Data security and encryption",
+          "Scalable architecture",
+          "Third-party API integration",
+          "Data reporting and analytics"
+        ]
       },
       "design": {
         "title": "UI/UX Design",
-        "description": "User-friendly interface design, responsive layouts, wireframes, and prototype preparation."
+        "description": "User-friendly interface design, responsive layouts, wireframes, and prototype preparation.",
+        "intro": "Beautiful and easy-to-use interfaces delight your users and convert them into customers. Stand out with modern design trends.",
+        "types": {
+          "web": "Web design — modern and functional interface design for websites and applications.",
+          "app": "Mobile app design — optimized user experience for iOS and Android platforms.",
+          "prototype": "Wireframes & prototypes — visualize your project structure and flow in advance.",
+          "brand": "Visual identity — create a recognizable brand with color palette, typography, and design system."
+        },
+        "features": [
+          "User research and persona creation",
+          "Responsive and adaptive design",
+          "Accessibility standards (WCAG)",
+          "Rapid prototyping (Figma)",
+          "Design system & component library",
+          "A/B testing and user testing"
+        ]
       },
       "support": {
         "title": "Technical Support",
-        "description": "Website maintenance, bug fixes, updates, hosting and domain management."
+        "description": "Website maintenance, bug fixes, updates, hosting and domain management.",
+        "intro": "Reliable technical support to keep your web project running smoothly. Security, performance, and updates are our job — you focus on your business.",
+        "types": {
+          "maintenance": "Maintenance — regular updates, security patches, and performance optimization.",
+          "bugs": "Bug fixing — detect and fix errors on your site quickly.",
+          "hosting": "Hosting management — server configuration, SSL certificates, and domain management.",
+          "optimization": "Performance optimization — improve loading speed and resource optimization."
+        },
+        "features": [
+          "Regular backups and recovery plan",
+          "Security audit and monitoring",
+          "Fast response time (SLA)",
+          "CMS updates and plugin management",
+          "Server and hosting optimization",
+          "Priority support line"
+        ]
       },
       "seo": {
         "title": "SEO Optimization",
-        "description": "On-page SEO, technical SEO audit, performance optimization, Google Analytics and Search Console setup."
+        "description": "On-page SEO, technical SEO audit, performance optimization, Google Analytics and Search Console setup.",
+        "intro": "Reach the top of search engines and connect with your target audience through a data-driven SEO strategy. Grow your organic traffic and scale your business.",
+        "types": {
+          "onpage": "On-page SEO — optimize your pages for search engines through internal optimization.",
+          "technical": "Technical SEO audit — deep analysis of site structure, indexing, and speed.",
+          "content": "Content strategy — create valuable content around target keywords.",
+          "local": "Local SEO — Google My Business optimization and local search visibility."
+        },
+        "features": [
+          "Keyword research and competitor analysis",
+          "Technical SEO audit and report",
+          "Performance & Core Web Vitals optimization",
+          "Google Analytics 4 + Search Console setup",
+          "Monthly performance report",
+          "Backlink and off-page SEO strategy"
+        ]
       },
       "ecommerce": {
         "title": "E-commerce Solutions",
-        "description": "Online stores, payment system integration, product management, and order tracking."
+        "description": "Online stores, payment system integration, product management, and order tracking.",
+        "intro": "Launch your products and services online. Increase your sales with a fully functional, secure, and easy-to-use e-commerce platform.",
+        "types": {
+          "store": "Online stores — full-featured sales platform for physical and digital products.",
+          "payment": "Payment integration — seamless payments with local and international gateways.",
+          "subscription": "Subscription-based sales — recurring payment models for memberships and services.",
+          "b2b": "B2B sales platform — wholesale pricing, bulk orders, and corporate account management."
+        },
+        "features": [
+          "Multiple payment gateway support",
+          "Product catalog and inventory management",
+          "Order tracking and status updates",
+          "Shipping and logistics integration",
+          "Multi-language and multi-currency support",
+          "SEO-optimized product pages"
+        ]
       }
     }
   },
