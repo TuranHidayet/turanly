@@ -2,6 +2,7 @@
   "nav": {
     "home": "Ana Səhifə",
     "about": "Haqqımda",
+    "services": "Xidmətlər",
     "work": "İşlərim",
     "blog": "Bloq",
     "contact": "Əlaqə"
@@ -32,6 +33,36 @@
     "live_demo": "Canlı Bax",
     "source_code": "Mənbə Kodu",
     "view_all": "Bütün Layihələrə Bax"
+  },
+  "services": {
+    "title": "Xidmətlər",
+    "subtitle": "Peşəkar həllər ilə biznesinizi inkişaf etdirin",
+    "items": {
+      "websites": {
+        "title": "Veb Saytlar",
+        "description": "Korporativ saytlar, portfolio saytları, landing page-lər və vizit kartı saytları. Müasir dizayn və mobil uyğunluq ilə."
+      },
+      "applications": {
+        "title": "Veb Tətbiqlər",
+        "description": "Admin panellər, CRM sistemləri, sifariş idarəetmə sistemləri və fərdi web tətbiqlər."
+      },
+      "design": {
+        "title": "UI/UX Dizayn",
+        "description": "İstifadəçi dostu interfeys dizaynı, responsive layout, wireframe və prototip hazırlığı."
+      },
+      "support": {
+        "title": "Texniki Dəstək",
+        "description": "Mövcud saytların texniki dəstəyi, bug fix, yeniləmələr, hosting və domain idarəetməsi."
+      },
+      "seo": {
+        "title": "SEO Optimizasiyası",
+        "description": "On-page SEO, texniki SEO audit, performans optimizasiyası, Google Analytics və Search Console quraşdırılması."
+      },
+      "ecommerce": {
+        "title": "E-commerce Həlləri",
+        "description": "Onlayn mağazalar, ödəniş sistem inteqrasiyası, məhsul idarəetməsi və sifariş izləmə."
+      }
+    }
   },
   "blog": {
     "title": "Bloq",

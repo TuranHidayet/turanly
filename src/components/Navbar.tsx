@@ -18,6 +18,7 @@ export function Navbar({ dict, lang }: NavbarProps) {
   const navItems = [
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/about`, label: dict.nav.about },
+    { href: `/${lang}/services`, label: dict.nav.services },
     { href: `/${lang}/work`, label: dict.nav.work },
     { href: `/${lang}/blog`, label: dict.nav.blog },
     { href: `/${lang}/contact`, label: dict.nav.contact },

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "services": "Services",
     "work": "Work",
     "blog": "Blog",
     "contact": "Contact"
@@ -32,6 +33,36 @@
     "live_demo": "Live Demo",
     "source_code": "Source Code",
     "view_all": "View All Projects"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Grow your business with professional solutions",
+    "items": {
+      "websites": {
+        "title": "Websites",
+        "description": "Corporate websites, portfolio sites, landing pages, and business card sites. Modern design with mobile responsiveness."
+      },
+      "applications": {
+        "title": "Web Applications",
+        "description": "Admin panels, CRM systems, order management systems, and custom web applications tailored to your needs."
+      },
+      "design": {
+        "title": "UI/UX Design",
+        "description": "User-friendly interface design, responsive layouts, wireframes, and prototype preparation."
+      },
+      "support": {
+        "title": "Technical Support",
+        "description": "Website maintenance, bug fixes, updates, hosting and domain management."
+      },
+      "seo": {
+        "title": "SEO Optimization",
+        "description": "On-page SEO, technical SEO audit, performance optimization, Google Analytics and Search Console setup."
+      },
+      "ecommerce": {
+        "title": "E-commerce Solutions",
+        "description": "Online stores, payment system integration, product management, and order tracking."
+      }
+    }
   },
   "blog": {
     "title": "Blog",
