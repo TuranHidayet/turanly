@@ -21,7 +21,12 @@
     "experience": "Təcrübə",
     "education": "Təhsil",
     "skills": "Bacarıqlar",
-    "download_cv": "CV Yüklə"
+    "download_cv": "CV Yüklə",
+    "available": "Yeni layihələr üçün açığam",
+    "languages": "Dillər",
+    "language_az": "Azərbaycan",
+    "language_en": "İngilis",
+    "language_tr": "Türk"
   },
   "work": {
     "title": "İşlərim",
@@ -180,6 +185,9 @@
     "no_posts": "Hələ heç bir yazı yoxdur.",
     "back": "Geri",
     "view_all": "Bütün Yazılara Bax",
+    "min_read": "dəq oxuma",
+    "cta_title": "Layihəniz üçün kömək lazımdır?",
+    "cta_desc": "Fikirlərinizi reallığa çevirmək üçün mənimlə əlaqə saxlayın.",
     "posts": {
       "why-need-website": {
         "title": "Biznesinizin Peşəkar Veb Sayta Niyə Ehtiyacı Var?",
@@ -258,7 +266,9 @@
     "send": "Göndər",
     "success": "Mesajınız göndərildi!",
     "error": "Xəta baş verdi. Yenidən cəhd edin.",
-    "or": "və ya"
+    "or": "Digər əlaqə üsulları",
+    "phone": "Telefon",
+    "location": "Ünvan"
   },
   "footer": {
     "copyright": "Bütün hüquqlar qorunur."

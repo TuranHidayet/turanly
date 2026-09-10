@@ -11,5 +11,6 @@
   { "name": "MySQL", "level": "expert", "icon": "mysql" },
   { "name": "Next.js", "level": "intermediate", "icon": "nextjs" },
   { "name": "Git & GitHub", "level": "advanced", "icon": "git" },
-  { "name": "GitLab", "level": "intermediate", "icon": "gitlab" }
+  { "name": "GitLab", "level": "intermediate", "icon": "gitlab" },
+  { "name": "WordPress", "level": "intermediate", "icon": "wordpress" }
 ]

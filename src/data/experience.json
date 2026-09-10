@@ -21,8 +21,8 @@
     "company": "Bionet MMC",
     "startDate": "08.2025",
     "endDate": "02.2026",
-    "description_az": "EMS - Cargo & Logistics Management System: backend arxitekturası, shipment processing, order lifecycle, payment handling. GLB Soft – Warehouse Management System: modul anbar idarəetmə sistemi. BSC, MDTF, Orhun Door, Azstudy kimi layihələrdə backend development.",
-    "description_en": "EMS - Cargo & Logistics Management System: backend architecture, shipment processing, order lifecycle, payment handling. GLB Soft – Warehouse Management System: modular warehouse management. Backend development for BSC, MDTF, Orhun Door, Azstudy projects.",
+    "description_az": "EMS - Cargo & Logistics Management System: backend arxitekturası, shipment processing, order lifecycle, payment handling. GLB Soft – Warehouse Management System: modul anbar idarəetmə sistemi. BSC, MDTF və Orhun Door kimi layihələrdə backend development və texniki dəstək.",
+    "description_en": "EMS - Cargo & Logistics Management System: backend architecture, shipment processing, order lifecycle, payment handling. GLB Soft – Warehouse Management System: modular warehouse management. Backend development and technical support for the BSC, MDTF, and Orhun Door projects.",
     "description_ru": "EMS - Cargo & Logistics Management System: архитектура бэкенда, обработка отправлений, жизненный цикл заказов, обработка платежей. GLB Soft – Warehouse Management System: модульная система управления складом.",
     "location": "Baku",
     "type": "fulltime"
@@ -35,9 +35,9 @@
     "company": "Azerishiq OJSC",
     "startDate": "09.2024",
     "endDate": "03.2025",
-    "description_az": "Azerishiq OJSC-də Junior Full-Stack Developer. Backend və frontend sistemlərin qurulması və təkmilləşdirilməsi. REST API-lər, Laravel, PHP, MySQL/PostgreSQL, HTML, CSS, JavaScript.",
-    "description_en": "Junior Full-Stack Developer at Azerishiq OJSC. Built and maintained backend and frontend systems. REST APIs, Laravel, PHP, MySQL/PostgreSQL, HTML, CSS, JavaScript.",
-    "description_ru": "Junior Full-Stack Developer в Azerishiq OJSC. Создание и поддержка backend и frontend систем. REST API, Laravel, PHP, MySQL/PostgreSQL, HTML, CSS, JavaScript.",
+    "description_az": "Azerishiq OJSC-də Junior Full-Stack Developer. Backend və frontend sistemlərin qurulması və təkmilləşdirilməsi, o cümlədən EDM – Electronic Data Management System (elektrik avtomobili şarj stansiyaları üçün veb platforma). REST API-lər, Laravel, PHP, MySQL/PostgreSQL, HTML, CSS, JavaScript.",
+    "description_en": "Junior Full-Stack Developer at Azerishiq OJSC. Built and maintained backend and frontend systems, including the EDM – Electronic Data Management System (a web platform for electric vehicle charging stations). REST APIs, Laravel, PHP, MySQL/PostgreSQL, HTML, CSS, JavaScript.",
+    "description_ru": "Junior Full-Stack Developer в Azerishiq OJSC. Создание и поддержка backend и frontend систем, включая EDM – Electronic Data Management System (веб-платформа для зарядных станций электромобилей). REST API, Laravel, PHP, MySQL/PostgreSQL, HTML, CSS, JavaScript.",
     "location": "Baku",
     "type": "fulltime"
   },

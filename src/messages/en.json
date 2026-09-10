@@ -21,7 +21,12 @@
     "experience": "Experience",
     "education": "Education",
     "skills": "Skills",
-    "download_cv": "Download CV"
+    "download_cv": "Download CV",
+    "available": "Available for new projects",
+    "languages": "Languages",
+    "language_az": "Azerbaijani",
+    "language_en": "English",
+    "language_tr": "Turkish"
   },
   "work": {
     "title": "My Work",
@@ -180,6 +185,9 @@
     "no_posts": "No posts yet.",
     "back": "Back",
     "view_all": "View All Posts",
+    "min_read": "min read",
+    "cta_title": "Need help with your project?",
+    "cta_desc": "Get in touch to turn your idea into reality.",
     "posts": {
       "why-need-website": {
         "title": "Why Your Business Needs a Professional Website",
@@ -258,7 +266,9 @@
     "send": "Send Message",
     "success": "Message sent successfully!",
     "error": "Something went wrong. Please try again.",
-    "or": "or"
+    "or": "Other ways to reach me",
+    "phone": "Phone",
+    "location": "Location"
   },
   "footer": {
     "copyright": "All rights reserved."
