@@ -2,22 +2,14 @@
 
 import { useEffect, useCallback } from "react";
 import { ImageSlider } from "./ImageSlider";
-
-interface Project {
-  id: number;
-  title: string;
-  images: string[];
-  tags: string[];
-  url: string;
-  github: string;
-  aspectRatio: string;
-}
+import type { Dictionary } from "@/lib/i18n";
+import type { DescriptionKey, Project } from "@/types/project";
 
 interface ProjectModalProps {
   project: Project;
   lang: string;
-  dict: any;
-  descriptionKey: string;
+  dict: Dictionary;
+  descriptionKey: DescriptionKey;
   onClose: () => void;
 }
 
@@ -62,7 +54,7 @@ export function ProjectModal({ project, dict, descriptionKey, onClose }: Project
           <h2 className="text-2xl font-bold">{project.title}</h2>
 
           <p className="text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-            {(project as any)[descriptionKey]}
+            {project[descriptionKey]}
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">

@@ -27,10 +27,19 @@ const driftingCode = Array.from({ length: 20 }, (_, i) => ({
   fromRight: Math.random() > 0.5,
 }));
 
-const techWords = [
+const techWordsList = [
   "JS", "TS", "PHP", "SQL", "API", "UI", "UX", "CSS", "HTML",
   "Git", "npm", "web", ".py", ".js", "[]", "{}", "=>", "</>"
 ];
+
+const techWords = techWordsList.map((word, i) => ({
+  id: i,
+  text: word,
+  left: 5 + Math.random() * 90,
+  top: 5 + Math.random() * 90,
+  duration: 6 + Math.random() * 10,
+  delay: Math.random() * 8,
+}));
 
 const shootingStars = Array.from({ length: 4 }, (_, i) => ({
   id: i,
@@ -127,18 +136,18 @@ export function HeroBackground() {
         ))}
 
         {/* Tech words floating */}
-        {techWords.map((word, i) => (
+        {techWords.map((w) => (
           <span
-            key={i}
+            key={w.id}
             className="absolute font-mono text-sm font-bold text-accent"
             style={{
-              left: `${Math.random() * 90 + 5}%`,
-              top: `${Math.random() * 90 + 5}%`,
+              left: `${w.left}%`,
+              top: `${w.top}%`,
               opacity: 0.35,
-              animation: `hb-float ${6 + Math.random() * 10}s ${Math.random() * 8}s infinite ease-in-out backwards`,
+              animation: `hb-float ${w.duration}s ${w.delay}s infinite ease-in-out backwards`,
             }}
           >
-            {word}
+            {w.text}
           </span>
         ))}
 

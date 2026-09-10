@@ -12,7 +12,7 @@ interface ProjectCardProps {
   aspectRatio?: string;
 }
 
-export function ProjectCard({ title, description, tags, images, url, github, liveDemo, sourceCode, aspectRatio }: ProjectCardProps) {
+export function ProjectCard({ title, description, images, url, liveDemo, aspectRatio }: ProjectCardProps) {
   return (
     <div className="card group flex h-full w-full flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:bg-zinc-50 hover:shadow-xl dark:hover:bg-zinc-800">
       <ImageSlider images={images} alt={title} aspectRatio={aspectRatio} />

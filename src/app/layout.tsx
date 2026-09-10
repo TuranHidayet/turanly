@@ -10,6 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://turanly.com"),
   title: "Turan Hidayatov | Full-Stack Web Developer",
   description: "Full-Stack Web Developer - Modern web applications",
   verification: {
@@ -30,7 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} overflow-x-hidden`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
+      className={`${inter.variable} overflow-x-hidden`}
+    >
       <body className="min-h-screen font-sans antialiased overflow-x-hidden">
         <ScrollRestorer />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

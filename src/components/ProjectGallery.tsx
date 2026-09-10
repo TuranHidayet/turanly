@@ -3,27 +3,14 @@
 import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectModal } from "./ProjectModal";
-
-interface Project {
-  id: number;
-  title: string;
-  description_az: string;
-  description_en: string;
-  description_ru: string;
-  images: string[];
-  tags: string[];
-  url: string;
-  github: string;
-  featured: boolean;
-  aspectRatio: string;
-  category: string;
-}
+import type { Dictionary } from "@/lib/i18n";
+import type { DescriptionKey, Project } from "@/types/project";
 
 interface ProjectGalleryProps {
   projects: Project[];
   lang: string;
-  dict: any;
-  descriptionKey: string;
+  dict: Dictionary;
+  descriptionKey: DescriptionKey;
 }
 
 export function ProjectGallery({ projects, lang, dict, descriptionKey }: ProjectGalleryProps) {
@@ -40,7 +27,7 @@ export function ProjectGallery({ projects, lang, dict, descriptionKey }: Project
           >
             <ProjectCard
               title={project.title}
-              description={String((project as any)[descriptionKey])}
+              description={project[descriptionKey]}
               tags={project.tags}
               images={project.images}
               url={project.url}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface BlogCardProps {
   title: string;
@@ -14,12 +15,13 @@ export function BlogCard({ title, description, date, slug, lang, readMore, image
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-zinc-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
       {image && (
-        <Link href={`/${lang}/blog/${slug}`} className="overflow-hidden">
-          <img
+        <Link href={`/${lang}/blog/${slug}`} className="relative block h-48 w-full overflow-hidden">
+          <Image
             src={image}
             alt={title}
-            className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </Link>
       )}

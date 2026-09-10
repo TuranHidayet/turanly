@@ -17,13 +17,16 @@ export default async function HomePage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const posts = Object.entries(dict.blog.posts).map(([slug, post]: [string, any]) => ({
-    slug,
-    title: post.title,
-    description: post.description,
-    date: post.date,
-    image: post.image,
-  }));
+  const posts = Object.keys(dict.blog.posts).map((slug) => {
+    const post = dict.blog.posts[slug as keyof typeof dict.blog.posts];
+    return {
+      slug,
+      title: post.title,
+      description: post.description,
+      date: post.date,
+      image: post.image,
+    };
+  });
 
   return (
     <>

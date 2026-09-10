@@ -2,26 +2,13 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { ProjectCard } from "./ProjectCard";
-
-interface Project {
-  id: number;
-  title: string;
-  description_az: string;
-  description_en: string;
-  description_ru: string;
-  images: string[];
-  tags: string[];
-  url: string;
-  github: string;
-  featured: boolean;
-  aspectRatio: string;
-  category: string;
-}
+import type { Dictionary } from "@/lib/i18n";
+import type { DescriptionKey, Project } from "@/types/project";
 
 interface ProjectCarouselProps {
   projects: Project[];
   lang: string;
-  dict: any;
+  dict: Dictionary;
 }
 
 function slidingWindows<T>(arr: T[], size: number): T[][] {
@@ -66,7 +53,7 @@ export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) 
     return () => clearInterval(timer);
   }, [next]);
 
-  const descriptionKey = `description_${lang}` as keyof typeof projects[0];
+  const descriptionKey = `description_${lang}` as DescriptionKey;
 
   return (
     <div className="relative" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
@@ -81,7 +68,7 @@ export function ProjectCarousel({ projects, lang, dict }: ProjectCarouselProps) 
                 <ProjectCard
                   key={`${i}-${project.id}`}
                   title={project.title}
-                  description={String(project[descriptionKey])}
+                  description={project[descriptionKey]}
                   tags={project.tags}
                   images={project.images}
                   url={project.url}

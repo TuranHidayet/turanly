@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, type FormEvent, useRef } from "react";
+import type { Dictionary } from "@/lib/i18n";
 
-export function ContactForm({ dict }: { dict: any }) {
+export function ContactForm({ dict }: { dict: Dictionary }) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const formRef = useRef<HTMLFormElement>(null);
 

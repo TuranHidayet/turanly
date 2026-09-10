@@ -2,10 +2,15 @@
 
 import { Locale, locales } from "@/lib/i18n";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
   const pathname = usePathname();
   const router = useRouter();
+
+  useEffect(() => {
+    history.scrollRestoration = "manual";
+  }, []);
 
   const labels: Record<Locale, string> = { az: "AZ", en: "EN", ru: "RU" };
 
@@ -22,7 +27,6 @@ export function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
   function handleClick(e: React.MouseEvent, locale: Locale) {
     e.preventDefault();
     const scrollY = window.scrollY;
-    history.scrollRestoration = "manual";
     sessionStorage.setItem("scrollY", String(scrollY));
     router.replace(switchHref(locale), { scroll: false });
   }

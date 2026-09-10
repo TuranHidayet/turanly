@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { lang, slug } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  const service = (dict.services.items as Record<string, any>)[slug];
+  const service = dict.services.items[slug as keyof typeof dict.services.items];
   if (!service) return {};
   return { title: `${service.title} | ${getFullName(lang as Locale)}` };
 }
@@ -68,7 +68,7 @@ export default async function ServiceDetailPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const service = (dict.services.items as Record<string, any>)[slug];
+  const service = dict.services.items[slug as keyof typeof dict.services.items];
 
   if (!service) notFound();
 
@@ -109,14 +109,14 @@ export default async function ServiceDetailPage({
                 {lang === "az" ? "Növləri" : lang === "ru" ? "Виды" : "Types"}
               </h2>
               <div className="grid gap-4 md:grid-cols-2">
-                {Object.entries(types).map(([key, desc]: [string, any]) => (
+                {Object.entries(types).map(([key, desc]) => (
                   <div key={key} className="card flex items-start gap-4">
                     <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                       <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
                     </div>
-                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">{desc as string}</p>
+                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">{desc}</p>
                   </div>
                 ))}
               </div>

@@ -2,6 +2,7 @@ import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { ProjectGallery } from "@/components/ProjectGallery";
 import projects from "@/data/projects.json";
+import type { DescriptionKey } from "@/types/project";
 
 export default async function WorkPage({
   params,
@@ -13,7 +14,7 @@ export default async function WorkPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const descriptionKey = `description_${lang}`;
+  const descriptionKey = `description_${lang}` as DescriptionKey;
 
   return (
     <div className="pt-24">
