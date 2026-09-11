@@ -10,6 +10,7 @@ import {
   EcommerceMockup,
   DataAnalyticsMockup,
 } from "@/components/mockups";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -23,7 +24,12 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  return { title: `${dict.services.title} | ${getFullName(lang as Locale)}` };
+  return buildMetadata({
+    lang: lang as Locale,
+    path: "/services",
+    title: `${dict.services.title} | ${getFullName(lang as Locale)}`,
+    description: dict.services.meta_description,
+  });
 }
 
 const serviceConfig: Record<

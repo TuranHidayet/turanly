@@ -3,6 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ScrollRestorer } from "@/components/ScrollRestorer";
+import { defaultLocale } from "@/lib/i18n";
+
+const SET_HTML_LANG_SCRIPT = `
+(function () {
+  var m = location.pathname.match(/^\\/(az|en|ru)(\\/|$)/);
+  if (m) document.documentElement.lang = m[1];
+})();
+`;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,12 +40,13 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang={defaultLocale}
       suppressHydrationWarning
       data-scroll-behavior="smooth"
       className={`${inter.variable} overflow-x-hidden`}
     >
       <body className="min-h-screen font-sans antialiased overflow-x-hidden">
+        <script dangerouslySetInnerHTML={{ __html: SET_HTML_LANG_SCRIPT }} />
         <ScrollRestorer />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

@@ -7,6 +7,9 @@
     "blog": "Bloq",
     "contact": "Əlaqə"
   },
+  "seo": {
+    "home_description": "Turan Hidayətov — PHP, Laravel və Next.js ilə peşəkar veb sayt və tətbiq inkişaf etdirən full-stack developer. Bakıda fəaliyyət göstərir, dünya üzrə müştərilərlə işləyir."
+  },
   "hero": {
     "greeting": "Salam, mən",
     "title": "Turan Hidayətov",
@@ -26,7 +29,8 @@
     "languages": "Dillər",
     "language_az": "Azərbaycan",
     "language_en": "İngilis",
-    "language_tr": "Türk"
+    "language_tr": "Türk",
+    "meta_description": "Full-stack developer Turan Hidayətovun təcrübəsi, təhsili və bacarıqları ilə tanış olun — PHP, Laravel, JavaScript və müasir veb texnologiyaları üzrə ekspertiza."
   },
   "work": {
     "title": "İşlərim",
@@ -37,11 +41,13 @@
     "uiux": "UI/UX",
     "live_demo": "Canlı Bax",
     "source_code": "Mənbə Kodu",
-    "view_all": "Bütün Layihələrə Bax"
+    "view_all": "Bütün Layihələrə Bax",
+    "meta_description": "Turan Hidayətovun hazırladığı veb sayt və tətbiq layihələri — kargo idarəetmə sistemlərindən dövlət portallarına qədər real biznes həlləri."
   },
   "services": {
     "title": "Xidmətlər",
     "subtitle": "Peşəkar həllər ilə biznesinizi inkişaf etdirin",
+    "meta_description": "Veb sayt, mobil tətbiq, dizayn, SEO və e-ticarət həlləri — biznesiniz üçün peşəkar rəqəmsal xidmətlər.",
     "items": {
       "websites": {
         "title": "Veb Saytlar",
@@ -188,6 +194,7 @@
     "min_read": "dəq oxuma",
     "cta_title": "Layihəniz üçün kömək lazımdır?",
     "cta_desc": "Fikirlərinizi reallığa çevirmək üçün mənimlə əlaqə saxlayın.",
+    "meta_description": "Veb development, biznes saytları və müasir texnologiyalar haqqında Turan Hidayətovun bloq yazıları.",
     "posts": {
       "why-need-website": {
         "title": "Biznesinizin Peşəkar Veb Sayta Niyə Ehtiyacı Var?",
@@ -268,7 +275,8 @@
     "error": "Xəta baş verdi. Yenidən cəhd edin.",
     "or": "Digər əlaqə üsulları",
     "phone": "Telefon",
-    "location": "Ünvan"
+    "location": "Ünvan",
+    "meta_description": "Layihəniz üçün Turan Hidayətovla əlaqə saxlayın — telefon, email və ya kontakt formu vasitəsilə."
   },
   "footer": {
     "copyright": "Bütün hüquqlar qorunur."

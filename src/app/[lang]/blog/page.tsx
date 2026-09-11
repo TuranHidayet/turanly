@@ -1,6 +1,7 @@
 import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/BlogCard";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -14,7 +15,12 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  return { title: `${dict.blog.title} | ${getFullName(lang as Locale)}` };
+  return buildMetadata({
+    lang: lang as Locale,
+    path: "/blog",
+    title: `${dict.blog.title} | ${getFullName(lang as Locale)}`,
+    description: dict.blog.meta_description,
+  });
 }
 
 export default async function BlogPage({

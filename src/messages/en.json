@@ -7,6 +7,9 @@
     "blog": "Blog",
     "contact": "Contact"
   },
+  "seo": {
+    "home_description": "Turan Hidayatov — a full-stack web developer building professional websites and applications with PHP, Laravel, and Next.js. Based in Baku, working with clients worldwide."
+  },
   "hero": {
     "greeting": "Hi, I'm",
     "title": "Turan Hidayatov",
@@ -26,7 +29,8 @@
     "languages": "Languages",
     "language_az": "Azerbaijani",
     "language_en": "English",
-    "language_tr": "Turkish"
+    "language_tr": "Turkish",
+    "meta_description": "Learn about Turan Hidayatov's experience, education, and skills — expertise in PHP, Laravel, JavaScript, and modern web technologies."
   },
   "work": {
     "title": "My Work",
@@ -37,11 +41,13 @@
     "uiux": "UI/UX",
     "live_demo": "Live Demo",
     "source_code": "Source Code",
-    "view_all": "View All Projects"
+    "view_all": "View All Projects",
+    "meta_description": "Web and application projects built by Turan Hidayatov — from cargo management systems to government portals, real business solutions."
   },
   "services": {
     "title": "Services",
     "subtitle": "Grow your business with professional solutions",
+    "meta_description": "Websites, mobile apps, design, SEO, and e-commerce solutions — professional digital services for your business.",
     "items": {
       "websites": {
         "title": "Websites",
@@ -188,6 +194,7 @@
     "min_read": "min read",
     "cta_title": "Need help with your project?",
     "cta_desc": "Get in touch to turn your idea into reality.",
+    "meta_description": "Turan Hidayatov's blog on web development, business websites, and modern technologies.",
     "posts": {
       "why-need-website": {
         "title": "Why Your Business Needs a Professional Website",
@@ -268,7 +275,8 @@
     "error": "Something went wrong. Please try again.",
     "or": "Other ways to reach me",
     "phone": "Phone",
-    "location": "Location"
+    "location": "Location",
+    "meta_description": "Get in touch with Turan Hidayatov about your project — by phone, email, or the contact form."
   },
   "footer": {
     "copyright": "All rights reserved."

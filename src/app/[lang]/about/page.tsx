@@ -5,6 +5,7 @@ import { SkillBadge } from "@/components/SkillBadge";
 import experience from "@/data/experience.json";
 import skills from "@/data/skills.json";
 import profile from "@/data/profile.json";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,7 +15,12 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  return { title: `${dict.about.title} | ${getFullName(lang as Locale)}` };
+  return buildMetadata({
+    lang: lang as Locale,
+    path: "/about",
+    title: `${dict.about.title} | ${getFullName(lang as Locale)}`,
+    description: dict.about.meta_description,
+  });
 }
 
 export default async function AboutPage({

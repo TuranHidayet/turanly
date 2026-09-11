@@ -1,6 +1,7 @@
 import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const slugs = ["websites", "applications", "design", "support", "seo", "ecommerce", "data-analytics"];
@@ -17,7 +18,12 @@ export async function generateMetadata({
   const dict = await getDictionary(lang as Locale);
   const service = dict.services.items[slug as keyof typeof dict.services.items];
   if (!service) return {};
-  return { title: `${service.title} | ${getFullName(lang as Locale)}` };
+  return buildMetadata({
+    lang: lang as Locale,
+    path: `/services/${slug}`,
+    title: `${service.title} | ${getFullName(lang as Locale)}`,
+    description: service.description,
+  });
 }
 
 const featureIcons: Record<string, React.ReactNode> = {

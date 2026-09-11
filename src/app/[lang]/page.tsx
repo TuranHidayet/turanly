@@ -1,11 +1,28 @@
 import Link from "next/link";
-import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
+import { getDictionary, hasLocale, getFullName, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { Hero } from "@/components/Hero";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { BlogCard } from "@/components/BlogCard";
 import { ContactForm } from "@/components/ContactForm";
 import projects from "@/data/projects.json";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+  const dict = await getDictionary(lang as Locale);
+  return buildMetadata({
+    lang: lang as Locale,
+    path: "",
+    title: `${getFullName(lang as Locale)} | ${dict.hero.subtitle}`,
+    description: dict.seo.home_description,
+  });
+}
 
 export default async function HomePage({
   params,

@@ -2,6 +2,7 @@ import { getDictionary, hasLocale, getFullName, locales, type Locale } from "@/l
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { buildMetadata } from "@/lib/seo";
 
 const WORDS_PER_MINUTE = 200;
 
@@ -27,9 +28,14 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
   const post = dict.blog.posts[slug as keyof typeof dict.blog.posts];
-  return {
-    title: post ? `${post.title} | ${getFullName(lang as Locale)}` : "Blog",
-  };
+  if (!post) return {};
+  return buildMetadata({
+    lang: lang as Locale,
+    path: `/blog/${slug}`,
+    title: `${post.title} | ${getFullName(lang as Locale)}`,
+    description: post.description,
+    image: post.image,
+  });
 }
 
 export default async function BlogPostPage({

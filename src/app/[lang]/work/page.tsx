@@ -1,8 +1,25 @@
-import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
+import { getDictionary, hasLocale, getFullName, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { ProjectGallery } from "@/components/ProjectGallery";
 import projects from "@/data/projects.json";
 import type { DescriptionKey } from "@/types/project";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+  const dict = await getDictionary(lang as Locale);
+  return buildMetadata({
+    lang: lang as Locale,
+    path: "/work",
+    title: `${dict.work.title} | ${getFullName(lang as Locale)}`,
+    description: dict.work.meta_description,
+  });
+}
 
 export default async function WorkPage({
   params,

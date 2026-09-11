@@ -2,6 +2,7 @@ import { getDictionary, hasLocale, getFullName, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { ContactForm } from "@/components/ContactForm";
 import profile from "@/data/profile.json";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -11,7 +12,12 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  return { title: `${dict.contact.title} | ${getFullName(lang as Locale)}` };
+  return buildMetadata({
+    lang: lang as Locale,
+    path: "/contact",
+    title: `${dict.contact.title} | ${getFullName(lang as Locale)}`,
+    description: dict.contact.meta_description,
+  });
 }
 
 export default async function ContactPage({
